@@ -7,24 +7,42 @@ const argv = yargs(hideBin(process.argv)).argv;
 const [argv1, argv2] = argv._;
 
 switch (argv1) {
-  case 'make:controller':
+  case "make:controller":
     try {
-      fs.readFileSync('src/controllers/' + argv2 + '.js');
-      console.log('Controller đã tồn tại');
+      fs.readFileSync("src/controllers/" + argv2 + ".controller.js");
+      console.log("Controller đã tồn tại");
     } catch (e) {
-      const template = fs.readFileSync('cli/templates/controller.tpl');
+      const template = fs.readFileSync("cli/templates/controller.tpl");
 
-      fs.writeFileSync('src/controllers/' + argv2 + '.js', template, {
-        flag: 'w+',
-      });
-      console.log('Tạo Controller thành công');
+      fs.writeFileSync(
+        "src/controllers/" + argv2 + ".controller.js",
+        template,
+        {
+          flag: "w+",
+        }
+      );
+      console.log("Tạo Controller thành công");
     }
     break;
 
-  case 'db-up':
+  case "make:route":
+    try {
+      fs.readFileSync("src/routes/" + argv2 + ".route.js");
+      console.log("Route đã tồn tại");
+    } catch (e) {
+      const template = fs.readFileSync("cli/templates/route.tpl");
+
+      fs.writeFileSync("src/routes/" + argv2 + ".route.js", template, {
+        flag: "w+",
+      });
+      console.log("Tạo Route thành công");
+    }
+    break;
+
+  case "db-up":
     exec(
-      'make db',
-      { uid: 1000, gid: 1000, cwd: '..' },
+      "make db",
+      { uid: 1000, gid: 1000, cwd: ".." },
       (error, stdout, stderr) => {
         if (error) {
           console.error(`Error: ${error.message}`);
@@ -35,29 +53,29 @@ switch (argv1) {
           return;
         }
         console.log(`stdout: ${stdout}`);
-      },
+      }
     );
     break;
 
-    case 'db-down':
-      exec(
-        'make down',
-        { uid: 1000, gid: 1000, cwd: '..' },
-        (error, stdout, stderr) => {
-          if (error) {
-            console.error(`Error: ${error.message}`);
-            return;
-          }
-          if (stderr) {
-            console.error(`stderr: ${stderr}`);
-            return;
-          }
-          console.log(`stdout: ${stdout}`);
-        },
-      );
-      break;
+  case "db-down":
+    exec(
+      "make down",
+      { uid: 1000, gid: 1000, cwd: ".." },
+      (error, stdout, stderr) => {
+        if (error) {
+          console.error(`Error: ${error.message}`);
+          return;
+        }
+        if (stderr) {
+          console.error(`stderr: ${stderr}`);
+          return;
+        }
+        console.log(`stdout: ${stdout}`);
+      }
+    );
+    break;
 
   default:
-    console.log('Invalid command');
+    console.log("Invalid command");
     break;
 }
