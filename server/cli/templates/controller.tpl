@@ -1,12 +1,12 @@
 const handleErrorResponse = (res, error, statusCode) => {
   console.error(error);
-  res.status(statusCode).send("Internal Server Error");
+  res.status(statusCode).send('Internal Server Error');
 };
 
 const Controller = {
   getAll: async (req, res) => {
     try {
-      return res.send("Generated controller")
+      return res.send('Generated controller')
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
@@ -16,7 +16,7 @@ const Controller = {
     const { id } = req.params;
     const idInt = parseInt(id);
     try {
-      return res.send("Generated controller")
+      return res.send('Generated controller')
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
@@ -24,7 +24,7 @@ const Controller = {
 
   create: async (req, res) => {
     try {
-      return res.send("Generated controller")
+      return res.send('Generated controller')
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
@@ -35,10 +35,10 @@ const Controller = {
     const idInt = parseInt(id);
 
     if (isNaN(idInt) || idInt <= 0) {
-      return res.status(400).json({ message: "Invalid ID" });
+      return res.status(400).json({ message: 'Invalid ID' });
     }
     try {
-      return res.send("Generated controller")
+      return res.send('Generated controller')
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
@@ -49,10 +49,10 @@ const Controller = {
     const idInt = parseInt(id);
 
     if (isNaN(idInt) || idInt <= 0) {
-      return res.status(400).json({ message: "Invalid ID" });
+      return res.status(400).json({ message: 'Invalid ID' });
     }
     try {
-      return res.send("Generated controller")
+      return res.send('Generated controller')
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
