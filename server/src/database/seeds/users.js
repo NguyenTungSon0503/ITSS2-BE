@@ -1,7 +1,7 @@
-import hashPasswordFunction from "../../utils/hash.js"
+import hashPasswordFunction from '../../utils/hash.js';
 
 const seedUsers = async (prisma) => {
-  const hashedPassword = await hashPasswordFunction("testpassword");
+  const hashedPassword = await hashPasswordFunction('testpassword');
 
   for (let i = 0; i < 5; i++) {
     await prisma.user.create({
@@ -10,7 +10,7 @@ const seedUsers = async (prisma) => {
         username: `user${i + 1}`,
         password: hashedPassword,
         avatar_url: 'https://example.com/avatar.png',
-        role: "USER",
+        role: 'USER',
       },
     });
   }

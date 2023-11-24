@@ -1,9 +1,9 @@
-import prisma from "../service/prisma.js";
-import hashPasswordFunction from "../utils/hash.js";
+import prisma from '../service/prisma.js';
+import hashPasswordFunction from '../utils/hash.js';
 
 const handleErrorResponse = (res, error, statusCode) => {
   console.error(error);
-  res.status(statusCode).send("Internal Server Error");
+  res.status(statusCode).send('Internal Server Error');
 };
 
 const userController = {
@@ -41,7 +41,7 @@ const userController = {
           username,
           password: hashedPassword,
           avatar_url: avatar_url,
-          role: "USER"
+          role: 'USER',
         },
       });
       return res.status(201).json(createdUser);
@@ -55,7 +55,7 @@ const userController = {
     const idInt = parseInt(id);
 
     if (isNaN(idInt) || idInt <= 0) {
-      return res.status(400).json({ message: "Invalid user ID" });
+      return res.status(400).json({ message: 'Invalid user ID' });
     }
 
     try {
@@ -80,7 +80,7 @@ const userController = {
     const idInt = parseInt(id);
 
     if (isNaN(idInt) || idInt <= 0) {
-      return res.status(400).json({ message: "Invalid user ID" });
+      return res.status(400).json({ message: 'Invalid user ID' });
     }
 
     try {
@@ -102,30 +102,30 @@ const userController = {
     }
   },
 
-//   getUserWhereTaskStatus: async (req, res) => {
-//     const { status } = req.query;
-//     try {
-//       const usersWithCompletedTasks = await prisma.user.findMany({
-//         where: {
-//           tasks: {
-//             some: {
-//               status: status,
-//             },
-//           },
-//         },
-//         include: {
-//           tasks: {
-//             where: {
-//               status: status,
-//             },
-//           },
-//         },
-//       });
-//       return res.status(200).json(usersWithCompletedTasks);
-//     } catch (error) {
-//       handleErrorResponse(res, error, 500);
-//     }
-//   },
+  //   getUserWhereTaskStatus: async (req, res) => {
+  //     const { status } = req.query;
+  //     try {
+  //       const usersWithCompletedTasks = await prisma.user.findMany({
+  //         where: {
+  //           tasks: {
+  //             some: {
+  //               status: status,
+  //             },
+  //           },
+  //         },
+  //         include: {
+  //           tasks: {
+  //             where: {
+  //               status: status,
+  //             },
+  //           },
+  //         },
+  //       });
+  //       return res.status(200).json(usersWithCompletedTasks);
+  //     } catch (error) {
+  //       handleErrorResponse(res, error, 500);
+  //     }
+  //   },
 };
 
 export default userController;
