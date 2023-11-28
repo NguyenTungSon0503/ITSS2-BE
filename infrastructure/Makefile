@@ -24,3 +24,11 @@ server-logs: ## View logs of the server container
 
 db-logs: ## View logs of the postgres container
 	@docker compose logs -f postgres
+
+tag-and-push-image: ## Tag and push image to Docker Hub
+	@if [ -z "$(OLD_TAG)" ] || [ -z "$(NEW_TAG)" ]; then \
+		echo "Please provide OLD_TAG, NEW_TAG parameters"; \
+		exit 1; \
+	fi
+	@docker tag orochiteam/itss2:$(OLD_TAG) orochiteam/itss2:$(NEW_TAG) && \
+	docker push orochiteam/itss2:$(NEW_TAG)
