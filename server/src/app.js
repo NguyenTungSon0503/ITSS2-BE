@@ -14,8 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/users', userRoutes);
-app.use('/healthcheck', function(req, res, next) {
-    res.send("This is heathcheck endpoint");
+app.use('/healthcheck', function (req, res, next) {
+  res.send('This is heathcheck endpoint');
 });
 
 export default app;
