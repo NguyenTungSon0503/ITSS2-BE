@@ -13,6 +13,7 @@
     "prisma:seed": "npx prisma db seed",
     "prisma:migrate": "npx prisma migrate dev",
     "prisma:reset": "npx prisma migrate reset",
+    "prisma:docker": "npx prisma migrate reset --force",
     "prisma:generate": "npx prisma generate --generator client"
   },
   "keywords": [],
