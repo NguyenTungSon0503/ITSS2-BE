@@ -5,6 +5,7 @@ import config from './config/config.js';
 import userRoutes from './routes/users.route.js';
 import morganMiddleware from './middleware/morgan.middleware.js';
 import logger from './utils/logger.js';
+import errorHandlingMiddleware from './middleware/errorHandling.middleware.js';
 
 const { URL } = config.env;
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/users', userRoutes);
+app.use(errorHandlingMiddleware);
 app.use('/healthcheck', function (req, res, next) {
   logger.info('This is a health check');
   res.send('This is heathcheck endpoint');
