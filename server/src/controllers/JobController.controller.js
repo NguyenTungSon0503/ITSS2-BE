@@ -1,3 +1,5 @@
+import prisma from "../service/prisma";
+
 const handleErrorResponse = (res, error, statusCode) => {
   console.error(error);
   res.status(statusCode).send('Internal Server Error');
@@ -16,7 +18,12 @@ const Controller = {
     const { id } = req.params;
     const idInt = parseInt(id);
     try {
-      return res.send('Generated controller')
+      const job = prisma.job.findUnique({
+        where: {id: idInt}
+      });
+      return job
+        ? res.status(200).json(job)
+        : res.status(404).json({ message: `Job ${id} not found` });
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
@@ -24,7 +31,24 @@ const Controller = {
 
   create: async (req, res) => {
     try {
-      return res.send('Generated controller')
+      const { title, description, requirements, advantages, company_id, salary_min, salary_max, years_of_experience, job_location, thumbnail_url, majors, is_domestic } = req.body
+      const createdJob = await prisma.job.create({
+        data: {
+          title: title,
+          description: description,
+          requirements: requirements,
+          advantages: advantages,
+          company_id: company_id,
+          salary_min: salary_min,
+          salary_max: salary_max,
+          years_of_experience: years_of_experience,
+          job_location: job_location,
+          thumbnail_url: thumbnail_url,
+          majors: majors,
+          is_domestic: is_domestic,
+        },
+      });
+      return res.status(201).json(createdJob);
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
@@ -38,7 +62,17 @@ const Controller = {
       return res.status(400).json({ message: 'Invalid ID' });
     }
     try {
-      return res.send('Generated controller')
+      const deletedJob = await prisma.job.delete({
+        where: { id: idInt },
+      });
+
+      if (!deletedJob) {
+        return res.status(404).json({ message: `Job ${id} not found` });
+      }
+
+      return res.status(204).json({
+        message: `User ${id} deleted successfully`,
+      });
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
@@ -52,7 +86,19 @@ const Controller = {
       return res.status(400).json({ message: 'Invalid ID' });
     }
     try {
-      return res.send('Generated controller')
+      const updatedJob = await prisma.job.update({
+        where: { id: idInt },
+        data: req.body,
+      });
+
+      if (!updatedJob) {
+        return res.status(404).json({ message: `Job ${id} not found` });
+      }
+
+      return res.status(200).json({
+        message: `Job ${id} updated successfully`,
+        updatedUser,
+      });
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
