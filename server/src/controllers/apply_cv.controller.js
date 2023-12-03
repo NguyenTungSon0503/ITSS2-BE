@@ -1,5 +1,6 @@
-import sendEmail from '../service/nodemailer.js';
+import { publishMessage } from '../service/rabbitmq.js';
 import deleteFile from '../utils/deleteFile.js';
+import fs from 'fs';
 
 const handleErrorResponse = (res, error, statusCode) => {
   console.error(error);
@@ -11,6 +12,7 @@ const applyController = {
     const { mailContent, companyEmail, subject } = req.body;
     const file = req.file;
     const filePath = file.path;
+    const fileContent = fs.readFileSync(filePath);
     try {
       const text = 'Hello User';
       const data = {
@@ -21,11 +23,10 @@ const applyController = {
         attachments: [
           {
             filename: file.originalname,
-            path: filePath,
           },
         ],
       };
-      await sendEmail(data);
+      await publishMessage(JSON.stringify(data), fileContent);
       deleteFile(filePath);
       return res.send('Applied successfully');
     } catch (error) {

@@ -43,6 +43,19 @@ services:
     networks:
       - itss2-backend
 
+  rabbitmq:
+    image: rabbitmq:3.8.14-management-alpine
+    container_name: rabbitmq
+    env_file:
+      - ./rabbitmq/.rabbitmq.env
+    ports:
+      - "${RABBITMQ_PORT_CONNECT}:${RABBITMQ_PORT_CONNECT}"
+      - "${RABBITMQ_PORT_UI}:${RABBITMQ_PORT_UI}"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - itss2-backend
+
 networks:
   itss2-backend:
     name: itss2-backend
@@ -50,3 +63,4 @@ networks:
 
 volumes:
   postgres_data: {}
+  rabbitmq-data: {}
