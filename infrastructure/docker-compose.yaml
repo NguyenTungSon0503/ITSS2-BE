@@ -10,13 +10,17 @@ services:
       args:
         - DATABASE_URL=postgresql://itssuser:password@postgres:5432/itss2
     image: docker.io/orochiteam/itss2:${TAGS}
+    user: "node"
     depends_on:
       postgres:
         condition: service_started
+      rabbitmq:
+        condition: service_healthy
     env_file:
       - ./backend/.backend.env
     networks:
-      - itss2-backend
+      - server-db
+      - server-rabbitmq
     ports:
       - ${PORT}:${PORT}
     healthcheck:
@@ -41,7 +45,7 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - itss2-backend
+      - server-db
 
   rabbitmq:
     image: rabbitmq:3.8.14-management-alpine
@@ -54,11 +58,19 @@ services:
     volumes:
       - rabbitmq-data:/var/lib/rabbitmq
     networks:
-      - itss2-backend
+      - server-rabbitmq
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 30s
+      retries: 3
 
 networks:
-  itss2-backend:
-    name: itss2-backend
+  server-db:
+    name: server-db
+    driver: bridge
+  server-rabbitmq:
+    name: server-rabbitmq
     driver: bridge
 
 volumes:

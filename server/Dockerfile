@@ -12,6 +12,8 @@ USER node
 
 RUN npm install
 
+RUN mkdir uploads
+
 COPY . .
 
 RUN npm run prisma:generate

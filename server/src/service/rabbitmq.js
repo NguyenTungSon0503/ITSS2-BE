@@ -23,8 +23,12 @@ export async function publishMessage(message, fileContent) {
 }
 
 export async function rabbitmqConnect() {
-  const connection = await amqp.connect(
-    'amqp://' + RABBITMQ_USER + ':' + RABBITMQ_PASSWORD + RABBITMQ_HOST,
-  );
-  return connection;
+  try {
+    const connection = await amqp.connect(
+      'amqp://' + RABBITMQ_USER + ':' + RABBITMQ_PASSWORD + RABBITMQ_HOST,
+    );
+    return connection;
+  } catch (error) {
+    throw new Error(error);
+  }
 }
