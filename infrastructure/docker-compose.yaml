@@ -65,6 +65,31 @@ services:
       timeout: 30s
       retries: 3
 
+  mailservice:
+    container_name: mailservice
+    restart: always
+    build:
+      context: ../mailservice/
+      dockerfile: ../mailservice/Dockerfile
+    image: mailservice:v1
+    user: "node"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      server:
+        condition: service_started
+    env_file:
+      - ./mailservice/.mailservice.env
+    networks:
+      - server-rabbitmq
+    ports:
+      - "5001:5001"
+    healthcheck:
+      test: wget --quiet --tries=1 --spider http://localhost:5001/healthcheck || exit 1z
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
 networks:
   server-db:
     name: server-db
