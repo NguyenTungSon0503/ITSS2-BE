@@ -1,5 +1,4 @@
 const seedJobs = async (prisma) => {
-
   await prisma.job.upsert({
     where: {
       id: 1,
@@ -45,7 +44,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HoChiMinh, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian, Thực tập',
+      jobs_type: 'Bán thời gian, Thực tập',
       majors: 'System Engineer, Devops, Java',
       is_domestic: true,
     },
@@ -71,7 +70,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian',
+      jobs_type: 'Bán thời gian',
       majors: 'Adobe Illustrator',
       is_domestic: true,
     },
@@ -97,7 +96,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HoChiMinh, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian, Toàn thời gian, Làm từ xa',
+      jobs_type: 'Bán thời gian, Toàn thời gian, Làm từ xa',
       majors: 'Quản Lý Nội Dung, UI UX Design',
       is_domestic: false,
     },
@@ -123,7 +122,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian, Thực tập',
+      jobs_type: 'Bán thời gian, Thực tập',
       majors: 'Java, Network',
       is_domestic: true,
     },
@@ -149,7 +148,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HoChiMinh, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian, Toàn thời gian',
+      jobs_type: 'Bán thời gian, Toàn thời gian',
       majors: '3d Max, Adobe Photoshop',
       is_domestic: true,
     },
@@ -175,7 +174,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Toàn thời gian',
+      jobs_type: 'Toàn thời gian',
       majors: 'Kinh Doanh, Bán Hàng',
       is_domestic: false,
     },
@@ -201,7 +200,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Thực tập',
+      jobs_type: 'Thực tập',
       majors: 'Luật Lao Động, Luật',
       is_domestic: true,
     },
@@ -227,7 +226,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian, Thực tập',
+      jobs_type: 'Bán thời gian, Thực tập',
       majors: 'Adobe Illustrator, Coreldraw',
       is_domestic: true,
     },
@@ -253,7 +252,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian, Toàn thời gian',
+      jobs_type: 'Bán thời gian, Toàn thời gian',
       majors: 'UI UX Design, Adobe Illustrator',
       is_domestic: true,
     },
@@ -279,7 +278,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HoChiMinh, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Bán thời gian, Làm từ xa',
+      jobs_type: 'Bán thời gian, Làm từ xa',
       majors: 'Quản Lý Nội Dung, Agency',
       is_domestic: true,
     },
@@ -305,7 +304,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Toàn thời gian',
+      jobs_type: 'Toàn thời gian',
       majors: '3d Max, Adobe Photoshop',
       is_domestic: true,
     },
@@ -331,7 +330,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Toàn thời gian, Làm từ xa',
+      jobs_type: 'Toàn thời gian, Làm từ xa',
       majors: 'Docker, Quản Trị Hệ Thống',
       is_domestic: true,
     },
@@ -357,7 +356,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HoChiMinh, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Toàn thời gian',
+      jobs_type: 'Toàn thời gian',
       majors: 'Java, System Engineer',
       is_domestic: true,
     },
@@ -383,7 +382,7 @@ const seedJobs = async (prisma) => {
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
-        jobs_type: 'Toàn thời gian',
+      jobs_type: 'Toàn thời gian',
       majors: 'Devops, Docker',
       is_domestic: true,
     },

@@ -27,7 +27,7 @@ model User {
   role       Role        @default(USER)
   created_at DateTime    @default(now()) @db.Timestamptz(6)
   updated_at DateTime    @default(now()) @db.Timestamptz(6)
-  ApplyJobs  ApplyJobs[]
+  ApplyJobs  ApplyJob[]
 
   @@map("users")
 }
@@ -66,20 +66,24 @@ model Job {
   is_domestic         Boolean     @default(false)
   created_at          DateTime    @default(now()) @db.Timestamptz(6)
   updated_at          DateTime    @default(now()) @db.Timestamptz(6)
-  ApplyJobs           ApplyJobs[]
+  ApplyJobs           ApplyJob[]
 
   @@map("jobs")
 }
 
-model Jobs_type {
+model JobType {
   id   Int    @id @default(autoincrement())
   name String @db.VarChar(255)
+
+  @@map("jobs_type")
 }
 
 model Field {
   id     Int      @id @default(autoincrement())
   name   String   @db.VarChar(255)
   Majors Majors[]
+
+  @@map("fields")
 }
 
 model Majors {
@@ -87,9 +91,11 @@ model Majors {
   name    String @db.VarChar(255)
   field   Field  @relation(fields: [fieldId], references: [id])
   fieldId Int
+
+  @@map("majors")
 }
 
-model ApplyJobs {
+model ApplyJob {
   id       Int      @id @default(autoincrement())
   user_id  User     @relation(fields: [userId], references: [id])
   job_id   Job      @relation(fields: [jobId], references: [id])
@@ -99,4 +105,6 @@ model ApplyJobs {
   apply_at DateTime @default(now()) @db.Timestamptz(6)
   message  String?  @db.Text
   cv_url   String   @db.VarChar(255)
+
+  @@map("apply_jobs")
 }

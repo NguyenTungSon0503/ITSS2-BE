@@ -137,7 +137,6 @@ const seedCompanies = async (prisma) => {
       address: 'HoChiMinh, VietNam',
     },
   });
-  
 };
 
 export default seedCompanies;
