@@ -18,6 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/users', userRoutes);
 app.use(errorHandlingMiddleware);
+app.use('/api/companies', companyRoutes);
 app.use('/healthcheck', function (req, res, next) {
   logger.info('This is a health check');
   res.send('This is heathcheck endpoint');
