@@ -13,21 +13,21 @@ enum Role {
 }
 
 enum Status {
-  pending
-  approve
-  reject
+  PENDING
+  APPROVE
+  REJECT
 }
 
 model User {
-  id         Int         @id @default(autoincrement())
-  email      String      @unique @db.VarChar(50)
-  username   String      @unique @db.VarChar(50)
-  password   String      @db.VarChar(255)
-  avatar_url String?     @db.VarChar(50)
-  role       Role        @default(USER)
-  created_at DateTime    @default(now()) @db.Timestamptz(6)
-  updated_at DateTime    @default(now()) @db.Timestamptz(6)
-  ApplyJobs  ApplyJob[]
+  id         Int        @id @default(autoincrement())
+  email      String     @unique @db.VarChar(50)
+  username   String     @unique @db.VarChar(50)
+  password   String     @db.VarChar(255)
+  avatar_url String?    @db.VarChar(255)
+  role       Role       @default(USER)
+  created_at DateTime   @default(now()) @db.Timestamptz(6)
+  updated_at DateTime   @default(now()) @db.Timestamptz(6)
+  applyJobs  ApplyJob[]
 
   @@map("users")
 }
@@ -49,39 +49,49 @@ model Company {
 }
 
 model Job {
-  id                  Int         @id @default(autoincrement())
-  title               String      @db.VarChar(255)
-  description         String      @db.Text
-  requirements        String?     @db.Text
-  advantages          String?     @db.Text
+  id                  Int            @id @default(autoincrement())
+  title               String         @db.VarChar(255)
+  description         String         @db.Text
+  requirements        String?        @db.Text
+  advantages          String?        @db.Text
   company_id          Int
-  company             Company     @relation(fields: [company_id], references: [id])
+  company             Company        @relation(fields: [company_id], references: [id])
   salary_min          Int
   salary_max          Int
   years_of_experience Int
-  job_location        String      @db.VarChar(255)
-  thumbnail_url       String      @db.VarChar(255)
-  jobs_type           String      @db.Text
-  majors              String      @db.Text
-  is_domestic         Boolean     @default(false)
-  created_at          DateTime    @default(now()) @db.Timestamptz(6)
-  updated_at          DateTime    @default(now()) @db.Timestamptz(6)
-  ApplyJobs           ApplyJob[]
+  job_location        String         @db.VarChar(255)
+  thumbnail_url       String         @db.VarChar(255)
+  is_domestic         Boolean        @default(false)
+  created_at          DateTime       @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime       @default(now()) @db.Timestamptz(6)
+  applyJobs           ApplyJob[]
+  jobTypeRelations    JobTypeToJob[]
 
   @@map("jobs")
 }
 
 model JobType {
-  id   Int    @id @default(autoincrement())
-  name String @db.VarChar(255)
+  id   Int            @id @default(autoincrement())
+  name String         @db.VarChar(255)
+  jobs JobTypeToJob[]
 
-  @@map("jobs_type")
+  @@map("job_types")
+}
+
+model JobTypeToJob {
+  id     Int     @id @default(autoincrement())
+  job    Job     @relation(fields: [jobId], references: [id])
+  jobId  Int
+  type   JobType @relation(fields: [typeId], references: [id])
+  typeId Int
+
+  @@map("job_type_to_job")
 }
 
 model Field {
   id     Int      @id @default(autoincrement())
   name   String   @db.VarChar(255)
-  Majors Majors[]
+  majors Majors[]
 
   @@map("fields")
 }
@@ -101,7 +111,7 @@ model ApplyJob {
   job_id   Job      @relation(fields: [jobId], references: [id])
   userId   Int
   jobId    Int
-  status   Status   @default(pending)
+  status   Status   @default(PENDING)
   apply_at DateTime @default(now()) @db.Timestamptz(6)
   message  String?  @db.Text
   cv_url   String   @db.VarChar(255)
