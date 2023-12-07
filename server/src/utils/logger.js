@@ -113,7 +113,6 @@ process.on('uncaughtException', (error) => {
     message: 'Uncaught exception occurred!',
     stack: error.stack,
   });
-  process.exit(0);
 });
 
 process.on('unhandledRejection', (error) => {
@@ -123,7 +122,6 @@ process.on('unhandledRejection', (error) => {
     message: 'Unhandled Rejection occurred!',
     stack: error.stack,
   });
-  process.exit();
 });
 
 const customLogger = winston.createLogger({
