@@ -106,6 +106,23 @@ const logger = winston.createLogger({
   exitOnError: false,
 });
 
+process.on('uncaughtException', (error) => {
+  logger.error({
+    statusCode: 500,
+    name: 'UncaughtException',
+    message: 'Uncaught exception occurred!',
+    stack: error.stack,
+  });
+});
+
+process.on('unhandledRejection', (error) => {
+  logger.error({
+    statusCode: 500,
+    name: 'UnhandledRejection',
+    message: 'Unhandled Rejection occurred!',
+    stack: error.stack,
+  });
+});
 
 const customLogger = winston.createLogger({
   level: 'error',
