@@ -1,7 +1,6 @@
-import prisma from "../service/prisma";
+import prisma from '../service/prisma.js';
 
 const handleErrorResponse = (res, error, statusCode) => {
-  console.error(error);
   res.status(statusCode).send('Internal Server Error');
 };
 
@@ -18,7 +17,7 @@ const Controller = {
     const { id } = req.params;
     const idInt = parseInt(id);
     try {
-      const job = prisma.job.findUnique({
+      const job = await prisma.job.findUnique({
         where: {id: idInt}
       });
       return job
