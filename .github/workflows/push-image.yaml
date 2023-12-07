@@ -1,7 +1,9 @@
 name: build-push-image
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   docker:
