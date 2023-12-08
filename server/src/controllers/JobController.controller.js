@@ -1,3 +1,4 @@
+import { empty } from '@prisma/client/runtime/library.js';
 import prisma from '../service/prisma.js';
 
 const handleErrorResponse = (res, error, statusCode) => {
@@ -7,7 +8,33 @@ const handleErrorResponse = (res, error, statusCode) => {
 const Controller = {
   getAll: async (req, res) => {
     try {
-      return res.send('Generated controller')
+      const filter = req.query.filter;
+      const order = req.query.order;
+
+      const objFilter = json.encode(Buffer.from(filter, 'base64'))
+      const objOrder = json.encode(Buffer.from(order,'base64'))
+
+      const result = await prisma.job.findMany({
+        where: {
+          ...(!empty(objFilter.salary_min ?? "") ? {
+            salary_max: {
+              gt: parseInt(objFilter.salary_min)
+            }
+          } : {}),
+          ...(!empty(objFilter.salary_max ?? "") ? {
+            salary_min: {
+              lt: parseInt(objFilter.salary_max)
+            }
+          } : {}),
+
+        },
+        orderBy: {
+          ...(!empty(objOrder.field ?? "") ? {
+            [objOrder.field]: objOrder.type
+          } : {})
+        }
+      })
+
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
