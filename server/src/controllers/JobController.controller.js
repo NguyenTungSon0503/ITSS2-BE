@@ -2,26 +2,30 @@ import { empty } from '@prisma/client/runtime/library.js';
 import prisma from '../service/prisma.js';
 
 const handleErrorResponse = (res, error, statusCode) => {
-  res.status(statusCode).send('Internal Server Error');
+  res.status(statusCode).send(error.message);
 };
 
 const Controller = {
   getAll: async (req, res) => {
     try {
       const filter = req.query.filter;
+      var objFilter = null, objOrder = null;
+      if(!filter){
+        objFilter = JSON.parse(Buffer.from(filter, 'base64'))
+      }
       const order = req.query.order;
-
-      const objFilter = json.encode(Buffer.from(filter, 'base64'))
-      const objOrder = json.encode(Buffer.from(order,'base64'))
+      if(!order){
+        objOrder = JSON.parse(Buffer.from(order,'base64'))
+      }
 
       const result = await prisma.job.findMany({
         where: {
-          ...(!empty(objFilter.salary_min ?? "") ? {
+          ...((objFilter && objFilter.hasOwnProperty('salary_min')) ? {
             salary_max: {
               gt: parseInt(objFilter.salary_min)
             }
           } : {}),
-          ...(!empty(objFilter.salary_max ?? "") ? {
+          ...((objFilter && objFilter.hasOwnProperty('salary_max')) ? {
             salary_min: {
               lt: parseInt(objFilter.salary_max)
             }
@@ -29,12 +33,12 @@ const Controller = {
 
         },
         orderBy: {
-          ...(!empty(objOrder.field ?? "") ? {
+          ...((objOrder && objOrder.hasOwnProperty('field') && objOrder.hasOwnProperty('type')) ? {
             [objOrder.field]: objOrder.type
           } : {})
         }
       })
-
+      res.status(200).json(result)
     } catch (error) {
       handleErrorResponse(res, error, 500);
     }
