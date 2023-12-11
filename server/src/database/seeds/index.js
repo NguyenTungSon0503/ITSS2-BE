@@ -6,6 +6,7 @@ import seedField from './field.js';
 import seedJobsType from './jobs_type.js';
 import seedMajors from './majors.js';
 import seedApplyJobs from './applyJobs.js';
+import seedJobTypeToJob from './job_type_to_job.js';
 
 const seed = async () => {
   await seedUsers(prisma);
@@ -15,6 +16,7 @@ const seed = async () => {
   await seedField(prisma);
   await seedMajors(prisma);
   await seedApplyJobs(prisma);
+  await seedJobTypeToJob(prisma);
   await prisma.$disconnect();
 };
 
