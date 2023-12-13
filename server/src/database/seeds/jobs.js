@@ -19,7 +19,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
-      //majors: 'Kinh Doanh, Bán Hàng',
+      majorsId: 8,
       is_domestic: true,
     },
     update: {},
@@ -45,7 +45,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
-      //majors: 'System Engineer, Devops, Java',
+      majorsId: 15,
       is_domestic: true,
     },
     update: {},
@@ -71,7 +71,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian',
-      //majors: 'Adobe Illustrator',
+      majorsId: 30,
       is_domestic: true,
     },
     update: {},
@@ -97,7 +97,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian, Làm từ xa',
-      //majors: 'Quản Lý Nội Dung, UI UX Design',
+      majorsId: 28,
       is_domestic: false,
     },
     update: {},
@@ -123,7 +123,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
-      //majors: 'Java, Network',
+      majorsId: 16,
       is_domestic: true,
     },
     update: {},
@@ -149,7 +149,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
-      //majors: '3d Max, Adobe Photoshop',
+      majorsId: 29,
       is_domestic: true,
     },
     update: {},
@@ -175,7 +175,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      //majors: 'Kinh Doanh, Bán Hàng',
+      majorsId: 9,
       is_domestic: false,
     },
     update: {},
@@ -201,7 +201,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Thực tập',
-      //majors: 'Luật Lao Động, Luật',
+      majorsId: 22,
       is_domestic: true,
     },
     update: {},
@@ -227,7 +227,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
-      //majors: 'Adobe Illustrator, Coreldraw',
+      majorsId: 32,
       is_domestic: true,
     },
     update: {},
@@ -253,7 +253,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
-      //majors: 'UI UX Design, Adobe Illustrator',
+      majorsId: 29,
       is_domestic: true,
     },
     update: {},
@@ -279,7 +279,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Làm từ xa',
-      //majors: 'Quản Lý Nội Dung, Agency',
+      majorsId: 27,
       is_domestic: true,
     },
     update: {},
@@ -305,7 +305,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      //majors: '3d Max, Adobe Photoshop',
+      majorsId: 30,
       is_domestic: true,
     },
     update: {},
@@ -331,7 +331,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian, Làm từ xa',
-      //majors: 'Docker, Quản Trị Hệ Thống',
+      majorsId: 14,
       is_domestic: true,
     },
     update: {},
@@ -357,7 +357,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      //majors: 'Java, System Engineer',
+      majorsId: 15,
       is_domestic: true,
     },
     update: {},
@@ -383,7 +383,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      //majors: 'Devops, Docker',
+      majorsId: 18,
       is_domestic: true,
     },
     update: {},

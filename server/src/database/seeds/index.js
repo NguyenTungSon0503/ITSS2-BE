@@ -11,10 +11,10 @@ import seedJobTypeToJob from './job_type_to_job.js';
 const seed = async () => {
   await seedUsers(prisma);
   await seedCompanies(prisma);
-  await seedJobs(prisma);
   await seedJobsType(prisma);
   await seedField(prisma);
   await seedMajors(prisma);
+  await seedJobs(prisma);
   await seedApplyJobs(prisma);
   await seedJobTypeToJob(prisma);
   await prisma.$disconnect();

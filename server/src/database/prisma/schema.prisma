@@ -64,6 +64,8 @@ model Job {
   is_domestic         Boolean        @default(false)
   created_at          DateTime       @default(now()) @db.Timestamptz(6)
   updated_at          DateTime       @default(now()) @db.Timestamptz(6)
+  majors              Majors         @relation(fields: [majorsId], references: [id])
+  majorsId            Int
   applyJobs           ApplyJob[]
   jobTypeRelations    JobTypeToJob[]
 
@@ -101,6 +103,7 @@ model Majors {
   name    String @db.VarChar(255)
   field   Field  @relation(fields: [fieldId], references: [id])
   fieldId Int
+  Job     Job[]
 
   @@map("majors")
 }
