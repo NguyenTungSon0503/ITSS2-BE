@@ -1,7 +1,7 @@
 const seedCompanies = async (prisma) => {
   await prisma.company.create({
     data: {
-      name: 'instagram',
+      name: 'INSTAGRAM',
       email: 'career@instagram.com',
       website: 'https://instagram.com',
       phone_number: '(406) 555-0120',
@@ -13,7 +13,7 @@ const seedCompanies = async (prisma) => {
   });
   await prisma.company.create({
     data: {
-      name: 'facebook',
+      name: 'FACEBOOK',
       email: 'career@facebook.com',
       website: 'https://facebook.com',
       phone_number: '(406) 555-0123',
@@ -25,7 +25,7 @@ const seedCompanies = async (prisma) => {
   });
   await prisma.company.create({
     data: {
-      name: 'slack',
+      name: 'SLACK',
       email: 'career@slack.com',
       website: 'https://slack.com',
       phone_number: '(406) 666-1234',
@@ -38,7 +38,7 @@ const seedCompanies = async (prisma) => {
 
   await prisma.company.create({
     data: {
-      name: 'vinaphone',
+      name: 'VINAPHONE',
       email: 'career@vinaphone.com',
       website: 'https://vinaphone.com',
       phone_number: '(84) 1431-4444',
@@ -50,7 +50,7 @@ const seedCompanies = async (prisma) => {
   });
   await prisma.company.create({
     data: {
-      name: 'viettel',
+      name: 'VIETTEL',
       email: 'career@viettel.com',
       website: 'https://viettel.com.vn',
       phone_number: '(84) 1800 8098',
@@ -62,7 +62,7 @@ const seedCompanies = async (prisma) => {
   });
   await prisma.company.create({
     data: {
-      name: 'tiktok',
+      name: 'TIKTOK',
       email: 'career@tiktok.com',
       website: 'https://www.tiktok.com',
       phone_number: '(406) 123-3133',
@@ -75,7 +75,7 @@ const seedCompanies = async (prisma) => {
 
   await prisma.company.create({
     data: {
-      name: 'schanel',
+      name: 'SCHANEL',
       email: 'career@schanel.com',
       website: 'https://www.schanel.com',
       phone_number: '(84) 111-7777',
@@ -88,9 +88,9 @@ const seedCompanies = async (prisma) => {
 
   await prisma.company.create({
     data: {
-      name: 'tencen',
-      email: 'career@tencen.com',
-      website: 'https://www.tencen.com',
+      name: 'TENCENT',
+      email: 'career@tencent.com',
+      website: 'https://www.tencent.com',
       phone_number: '(46) 111-7777',
       hust_partner: false,
       logo_url:
@@ -101,7 +101,7 @@ const seedCompanies = async (prisma) => {
 
   await prisma.company.create({
     data: {
-      name: 'vnpay',
+      name: 'VNPAY',
       email: 'career@vnpay.com',
       website: 'https://vnpay.vn/',
       phone_number: '(84) 123-3333',
@@ -114,7 +114,7 @@ const seedCompanies = async (prisma) => {
 
   await prisma.company.create({
     data: {
-      name: 'momo',
+      name: 'MOMO',
       email: 'career@momo.com',
       website: 'https://momo.vn/',
       phone_number: '(84) 222-7444',
@@ -127,7 +127,7 @@ const seedCompanies = async (prisma) => {
 
   await prisma.company.create({
     data: {
-      name: 'true money',
+      name: 'TRUE MONEY',
       email: 'career@truemoney.com',
       website: 'https://truemoney.vn/',
       phone_number: '(84) 222-7444',
