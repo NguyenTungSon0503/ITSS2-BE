@@ -7,6 +7,8 @@ import morganMiddleware from './middleware/morgan.middleware.js';
 import logger from './utils/logger.js';
 import errorHandlingMiddleware from './middleware/errorHandling.middleware.js';
 import companyRoutes from './routes/companies.route.js';
+import jobRoutes from './routes/jobs.route.js';
+import fieldRoutes from './routes/fields.route.js';
 
 const { URL } = config.env;
 const app = express();
@@ -19,6 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/users', userRoutes);
 app.use('/api/companies', companyRoutes);
+app.use('/api/jobs', jobRoutes);
+app.use('/api/fields', fieldRoutes);
 app.use(errorHandlingMiddleware);
 app.use('/healthcheck', function (req, res, next) {
   logger.info('This is a health check');
