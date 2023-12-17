@@ -114,10 +114,38 @@ const jobController = {
     try {
       const job = await prisma.job.findUnique({
         where: { id: idInt },
+        include: {
+          company: {
+            select: {
+              name: true,
+              hust_partner: true,
+              logo_url: true,
+              website: true,
+              phone_number: true,
+              email: true,
+            },
+          },
+          majors :{
+            select: {
+              name: true,
+            }
+          },
+          jobTypeRelations: {
+            select: {
+              type: {
+                select: {
+                  name: true,
+                },
+              },
+            },
+          },
+        }
       });
-      return job
-        ? res.status(200).json(job)
-        : res.status(404).json({ message: `Job ${id} not found` });
+      if(job) {
+        return res.status(200).json(job);
+      } else {
+        return res.status(404).json({ message: `Job ${id} not found` });
+      }
     } catch (error) {
       next(error);
       throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
