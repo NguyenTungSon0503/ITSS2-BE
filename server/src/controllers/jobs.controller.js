@@ -108,5 +108,20 @@ const jobController = {
       throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
     }
   },
+  getJobById: async (req, res, next) => {
+    const { id } = req.params;
+    const idInt = parseInt(id);
+    try {
+      const job = await prisma.job.findUnique({
+        where: { id: idInt },
+      });
+      return job
+        ? res.status(200).json(job)
+        : res.status(404).json({ message: `Job ${id} not found` });
+    } catch (error) {
+      next(error);
+      throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
+    }
+  },
 };
 export default jobController;
