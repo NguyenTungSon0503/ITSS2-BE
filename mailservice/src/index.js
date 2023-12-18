@@ -1,15 +1,15 @@
-import express from "express";
 import amqp from "amqplib";
 import sendEmail from "./nodemailer.js";
 import config from "./config.js";
 
-const { PORT, RABBITMQ_USER, RABBITMQ_PASSWORD, RABBITMQ_HOST, QUEUE_NAME } =
-  config.env;
-
-const app = express();
-
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+const {
+  RABBITMQ_USER,
+  RABBITMQ_PASSWORD,
+  RABBITMQ_HOST,
+  EXCHANGE_NAME,
+  QUEUE_NAME,
+  ROUTING_KEY,
+} = config.env;
 
 async function consumeMessages() {
   try {
@@ -18,7 +18,11 @@ async function consumeMessages() {
     );
     const channel = await connection.createChannel();
 
-    await channel.assertQueue(QUEUE_NAME, { durable: true });
+    await channel.assertExchange(EXCHANGE_NAME, "direct", { durable: true });
+    const assertQueue = await channel.assertQueue(QUEUE_NAME, {
+      durable: true,
+    });
+    await channel.bindQueue(assertQueue.queue, EXCHANGE_NAME, ROUTING_KEY);
 
     await channel.consume(QUEUE_NAME, async (message) => {
       if (message !== null) {
@@ -54,7 +58,3 @@ async function startConsuming() {
 }
 
 startConsuming(); // Start consuming messages when the application starts
-
-app.listen(PORT, () => {
-  console.log(`Express server is running on port ${PORT}`);
-});
