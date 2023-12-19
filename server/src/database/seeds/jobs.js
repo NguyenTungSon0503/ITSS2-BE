@@ -14,6 +14,7 @@ const seedJobs = async (prisma) => {
       company_id: 1,
       salary_min: 15000,
       salary_max: 20000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -40,8 +41,9 @@ const seedJobs = async (prisma) => {
       company_id: 2,
       salary_min: 25000,
       salary_max: 40000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
@@ -66,6 +68,7 @@ const seedJobs = async (prisma) => {
       company_id: 3,
       salary_min: 20000,
       salary_max: 30000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -92,13 +95,14 @@ const seedJobs = async (prisma) => {
       company_id: 4,
       salary_min: 13000,
       salary_max: 18000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian, Làm từ xa',
       majorsId: 28,
-      is_domestic: false,
+      is_domestic: true,
     },
     update: {},
   });
@@ -118,6 +122,7 @@ const seedJobs = async (prisma) => {
       company_id: 5,
       salary_min: 10000,
       salary_max: 15000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -144,8 +149,9 @@ const seedJobs = async (prisma) => {
       company_id: 6,
       salary_min: 15000,
       salary_max: 23000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
@@ -170,13 +176,14 @@ const seedJobs = async (prisma) => {
       company_id: 7,
       salary_min: 17000,
       salary_max: 25000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 9,
-      is_domestic: false,
+      is_domestic: true,
     },
     update: {},
   });
@@ -196,6 +203,7 @@ const seedJobs = async (prisma) => {
       company_id: 8,
       salary_min: 10000,
       salary_max: 15000,
+      expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -222,13 +230,14 @@ const seedJobs = async (prisma) => {
       company_id: 9,
       salary_min: 15000,
       salary_max: 23000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Tokyo, Jp',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
       majorsId: 32,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -248,6 +257,7 @@ const seedJobs = async (prisma) => {
       company_id: 3,
       salary_min: 25000,
       salary_max: 30000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 1,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -274,8 +284,9 @@ const seedJobs = async (prisma) => {
       company_id: 4,
       salary_min: 17000,
       salary_max: 25000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Làm từ xa',
@@ -300,6 +311,7 @@ const seedJobs = async (prisma) => {
       company_id: 2,
       salary_min: 20000,
       salary_max: 30000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -326,6 +338,7 @@ const seedJobs = async (prisma) => {
       company_id: 10,
       salary_min: 25000,
       salary_max: 40000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -352,8 +365,9 @@ const seedJobs = async (prisma) => {
       company_id: 6,
       salary_min: 55000,
       salary_max: 70000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 5,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -378,12 +392,419 @@ const seedJobs = async (prisma) => {
       company_id: 8,
       salary_min: 45000,
       salary_max: 60000,
+      expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 4,
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 18,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 16,
+    },
+    create: {
+      title: 'Java Developer',
+      description:
+        '<p>Tham gia vào các dự án phát triển sử dụng ngôn ngữ Java và các công nghệ khác. Phát triển sản phẩm mới và nâng cấp các sản phẩm hiện có. Xây dựng và tối ưu hóa hệ thống để đáp ứng số lượng người dùng lớn. Tham gia training và tự học kiến thức và công nghệ mới để áp dụng vào dự án. Hỗ trợ nghiên cứu công nghệ, phối hợp với BA trong việc phân tích tài liệu yêu cầu người sử dụng, tài liệu mô tả, và đặc tả sản phẩm dự án. Đảm bảo tuân thủ các chuẩn và thủ tục kiểm thử. Nghiên cứu tài liệu dự án cùng với project team leader và thành viên dự án. Hỗ trợ thành viên dự án để hiểu rõ yêu cầu nghiệp vụ và yêu cầu người sử dụng, đồng thời thống nhất giao diện sử dụng. Viết các tài liệu dự án theo yêu cầu. Thực hiện các công việc được giao bởi trưởng bộ phận và quản trị dự án trong phạm vi công việc.</p>',
+      requirements:
+        '<ul><li>Trình độ học vấn: Cao đẳng trở lên (chuyên ngành công nghệ thông tin hoặc liên quan); Có trên 3 năm kinh nghiệm Java; Kinh nghiệm với Vue, Angular, React là lợi thế; Kinh nghiệm xây dựng ứng dụng Microservice là lợi thế; Sử dụng thành thạo ít nhất 1 hệ quản trị cơ sở dữ liệu như Oracle, MySQL, PostgreSQL, Mongo; Tinh thần trách nhiệm, tập thể; Kỹ năng giao tiếp tốt; Chủ động tìm hiểu và học hỏi công nghệ mới; Chủ động, cầu tiến trong công việc.</li></ul>        ',
+      advantages:
+        '<ul><li>Mức lương cạnh tranh</li><li>Môi trường làm việc thân thiện, năng động, có cơ hội phát triển và thăng tiến.</li><li>Ghi nhận thành tích, tăng lương và thưởng kịp thời.</li><li>Thưởng định kì ngày lễ 30/4, 2/9, thường Tết.</li><li>Nghỉ thứ 7, chủ nhật và các ngày Lễ theo quy định.</li><li>Được hỗ trợ tiền làm thêm giờ, phụ cấp hoạt động dự án.</li><li>Tham gia các khóa đào tạo do công ty tổ chức: kỹ năng mềm, nâng cao trình độ chuyên môn...</li><li>Có cơ hội thăng tiến.</li><li>Được đào tạo, làm việc cùng các chuyên gia nước ngoài.</li><li>Có cơ hội công tác nước ngoài.</li><li>Được hưởng đầy đủ các chế độ bảo hiểm theo luật Việt Nam và quy định của công ty.</li></ul>        ',
+      company_id: 3,
+      salary_min: 35000,
+      salary_max: 40000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 3,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 16,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 17,
+    },
+    create: {
+      title: 'Nhân Viên Kỹ Thuật Viễn Thông',
+      description:
+        '<p>Triển khai và lắp đặt đường truyền Internet và Truyền hình IPTV của FPT Telecom. Cài đặt và hướng dẫn khách hàng về sử dụng dịch vụ Internet và truyền hình của FPT. Bảo trì, kiểm tra, và khắc phục sự cố liên quan đến đường truyền Internet và truyền hình FPT cho khách hàng. Ghi nhận phản hồi trực tiếp từ khách hàng và phối hợp với các bộ phận liên quan để nâng cao chất lượng dịch vụ của công ty.</p>',
+      requirements:
+        '<ul><li>Nam tuổi từ 20-33</li><li>Tốt nghiệp từ trung cấp nghề trở lên với các chuyên ngành liên quan khối kỹ thuật: Điện tử viễn thông, công nghệ thông tin, Điện điện tử, Cơ điện tử, Điện,..v..v...</li><li>Khả năng giao tiếp tốt, có điện thoại hệ điều hành Android và xe máy di chuyển</li></ul>        ',
+      advantages:
+        '<ul><li>Thu nhập: Theo năng lực, trung bình 10-15 triệu/tháng. Thời gian thử việc ngắn, có đào tạo và phúc lợi đầy đủ. Môi trường làm việc thân thiện và cơ hội phát triển.</li></ul>        ',
+      company_id: 8,
+      salary_min: 45000,
+      salary_max: 60000,
+      expired_at: '2024-03-31T23:59:59Z',
+      years_of_experience: 4,
+      job_location: 'Bangkok, TL',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 1,
+      is_domestic: false,
+    },
+    update: {},
+  });
+
+
+  await prisma.job.upsert({
+    where: {
+      id: 18,
+    },
+    create: {
+      title: 'Kỹ Sư Hệ Thống',
+      description:
+        '<p>Quản trị và phát triển hệ thống máy chủ Middleware, đảm bảo an toàn dữ liệu, triển khai giải pháp Cloud và công nghệ ảo hóa, xây dựng quy trình DevOps, tích hợp hệ thống với đối tác, và thực hiện các nhiệm vụ khác theo phân công.</p>',
+      requirements:
+        '<ul><li>Tốt nghiệp Đại học Công nghệ thông tin, Kinh nghiệm 2 năm ở vị trí Kỹ sư giải pháp tích hợp hệ thống, hiểu biết về Linux và Windows. Kiến thức về hạ tầng phần cứng, lập trình shell, python. Tham gia triển khai dự án tích hợp hệ thống, Cloud, ảo hóa, mạng, lưu trữ. Tư duy logic tốt, chủ động, trách nhiệm và thái độ tích cực.</li></ul>        ',
+      advantages:
+        '<ul><li>Thu nhập: từ 300 đến 650 triệu/năm (min/max), Phụ cấp ăn ca 730,000 VNĐ/tháng, Thưởng lễ, BHXH, BHYT, BHTN, Đào tạo, Thời gian làm việc: Thứ 2 - Thứ 6, 8-17h, Tăng lương định kỳ, Thăng tiến, Môi trường chuyên nghiệp, rộng, cơ hội thể hiện năng lực</li></ul>        ',
+      company_id: 5,
+      salary_min: 50000,
+      salary_max: 70000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 4,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 15,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 19,
+    },
+    create: {
+      title: 'Giáo Viên Toán',
+      description:
+        '<p>Chuẩn bị giáo án và kế hoạch giảng dạy theo chương trình của Bộ GD&ĐT. Quan tâm và chăm sóc học sinh, đảm bảo chất lượng và hiệu quả giảng dạy. Tham gia các hoạt động của nhà trường và tổ chuyên môn. Thực hiện công tác chủ nhiệm nếu có, và thực hiện các nhiệm vụ khác được phân công.</p>',
+      requirements:
+        '<ul><li>Tốt nghiệp Đại học chính quy Sư phạm, Làm chủ nhiệm lớp, Chất giọng truyền cảm, Năng lực sư phạm vững vàng, Hiểu tâm lý lứa tuổi, Giao tiếp tốt với đồng nghiệp và phụ huynh</li></ul>        ',
+      advantages:
+        '<ul><li>Bảo hiểm theo quy định</li><li>Ăn trưa, nghỉ trưa tại trường</li><li>Thưởng hàng tháng theo năng lực</li><li>Giảm 100% học phí cho 2 con theo học tại trường</li><li>Có cơ hội được làm việc trong môi trường chuyên nghiệp</li></ul>        ',
+      company_id: 1,
+      salary_min: 15000,
+      salary_max: 20000,
+      expired_at: '2024-02-28T23:59:59Z',
+      years_of_experience: 7,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 4,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 20,
+    },
+    create: {
+      title: 'Trợ Lý Học Thuật',
+      description:
+        '<p>Hình thức làm việc: Onsite, làm việc trực tiếp tại văn phòng công ty (Địa điểm: 81 Giang Văn Minh, Đội Cấn, Ba Đình, Hà Nội). Hỗ trợ Giám đốc Học Thuật hoàn thiện giáo trình, bao gồm việc tổng hợp câu hỏi cho 4 kỹ năng từ nhiều nguồn khác nhau, nghiên cứu các tài liệu, thu thập và biên soạn chúng thành một giáo trình chất lượng. Viết câu trả lời gợi ý với ý tưởng và từ vựng cho các câu hỏi ở kỹ năng viết và nói. Tạo bài tập ôn tập từ vựng cho kỹ năng nghe và đọc, ví dụ như nối từ với nghĩa, lập bảng keyword, và viết mẹo và kỹ thuật làm bài cho từng dạng câu hỏi ở 4 kỹ năng. Đồng thời, thực hiện việc viết giáo án.</p>',
+      requirements:
+        '<ul><li>Có bằng Sư phạm tiếng Anh (chấp nhận cả sinh viên chưa ra trường và sinh viên mới ra trường), hoặc chứng chỉ IELTS 7.5 trở lên (chứng chỉ hết hạn không quá 4 năm)</li><li>Có kinh nghiệp trong việc giảng dạy tiếng Anh hoặc IELTS, có kinh nghiệm làm giáo án, giáo trình là một lợi thế</li><li>Sẵn sàng học hỏi, mong muốn trở thành IELTS trainer trong tương lai</li></ul>        ',
+      advantages:
+        '<ul><li>Full-time: 12,000,000 - 16,000,000 VND/tháng (làm việc theo giờ hành chính, từ 8h30 đến 18h, nghỉ trưa 12h30 đến 14h) và thưởng.</li><li>Bảo hiểm, trợ cấp đi lại và ăn trưa, thưởng tháng lương thứ 13, 12 ngày nghỉ phép trong năm, tiệc công ty hàng quý, du lịch công ty.</li><li>Thưởng cuối dự án 2 triệu - 4 triệu</li><li>Có hỗ trợ đóng dấu thực tập</li></ul>        ',
+      company_id: 5,
+      salary_min: 12000,
+      salary_max: 16000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 4,
+      job_location: 'HCM, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 7,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 21,
+    },
+    create: {
+      title: 'Frontend Developer',
+      description:
+        '<p>Phát triển Mobile App, hợp tác với đội UI/UX và lập trình backend, tham gia phân tích yêu cầu, nghiên cứu công nghệ mới, và tối ưu hóa hiệu suất để cải thiện trải nghiệm người dùng.</p>',
+      requirements:
+        '<ul><li>Yêu cầu về ngôn ngữ lập trình và tools: <ul><li>Thành thạo lập trình với ngôn ngữ C#.</li><li>Kinh nghiệm sử dụng ASP.NET Core, Entity Framework để phát triển API, backend.</li><li>Thành thạo HTML, CSS, JavaScript và các framework như React để phát triển frontend mobile/web.</li><li>Kinh nghiệm thiết kế giao diện người dùng (UI/UX) và triển khai các tính năng tương tác.</li></ul></li><li>Yêu cầu về database: <ul><li>Thành thạo với SQL: bao gồm các lệnh SELECT, INSERT, UPDATE, DELETE và JOIN, tối ưu hóa truy vấn.</li><li>Hiểu biết về các loại cơ sở dữ liệu NoSQL như MongoDB, Cassandra, hoặc Redis là 1 lợi thế.</li></ul></li></ul>        ',
+      advantages:
+        '<ul><li>Thu nhập hấp dẫn lên tới 35 triệu đồng/tháng.</li><li>Môi trường làm việc sáng tạo và thân thiện.</li><li>Được hưởng đầy đủ các quyền lợi về BHXH - BHYT.</li><li>Được trang bị đầy đủ trang thiết bị phục vụ công việc.</li><li>Cơ hội thể hiện tài năng và đóng góp ý tưởng trong các dự án thú vị.</li><li>Phát triển sự nghiệp và thăng tiến trong lĩnh vực Lập trình.</li></ul>        ',
+      company_id: 3,
+      salary_min: 20000,
+      salary_max: 35000,
+      expired_at: '2024-03-31T23:59:59Z',
+      years_of_experience: 3,
+      job_location: 'NY, US',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 19,
+      is_domestic: false,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 22,
+    },
+    create: {
+      title: 'System Engineer',
+      description:
+        '<p>Tổ chức và triển khai giải pháp An toàn thông tin và Truyền thông (ATTT), bao gồm tiếp nhận, nghiên cứu giải pháp, thực nghiệm hệ thống, thiết lập môi trường, cấu hình, và triển khai các dịch vụ sản phẩm theo hợp đồng đã ký kết với khách hàng và nội bộ tập đoàn, nhằm đảm bảo chất lượng và tuân thủ Service Level Agreement (SLA). Xử lý các sự cố và lỗi xuất hiện trong quá trình triển khai giải pháp ATTT tại site của khách hàng, hướng dẫn và đào tạo người sử dụng về việc sử dụng và quản lý sản phẩm ATTT sau khi triển khai. Quản lý nguồn lực triển khai để đảm bảo chất lượng và tiến độ, đồng thời duy trì và nâng cấp các phiên bản sản phẩm ATTT, đồng bộ phiên bản để cung cấp khách hàng những sản phẩm được cập nhật và nâng cấp.</p>',
+      requirements:
+        '<ul><li>Có từ 2 năm kinh nghiệm triển khai các sản phẩm CNTT/ATTT</li><li>Tốt nghiệp ĐH/CĐ, chuyên ngành: CNTT, Điện tử viễn thông, An toàn thông tin</li><li>Có kiến thức, kinh nghiệm về các hệ điều hành linux là bắt buộc (Ubuntu, Debian, Centos...), có kiến thức cơ bản về hệ thống mạng, TCP/IP Routing, Switching...</li><li>Có kiến thức về các hệ thống ảo hóa: vmware esxi, vcenter hoặc tương đương</li><li>Có kinh nghiệm và kỹ năng làm việc khách hàng</li><li>Có chứng chỉ mạng, Linux, bảo mật là lợi thế</li><li>Có khả năng đọc hiểu tiếng Anh tốt, trình độ tương đương TOEIC 550 trở lên</li></ul>        ',
+      advantages:
+        '',
+      company_id: 5,
+      salary_min: 18000,
+      salary_max: 32000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 2,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 15,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 23,
+    },
+    create: {
+      title: 'Nhân Viên Quản Lý Quan Hệ Khách Hàng',
+      description:
+        '<p>Tiếp nhận và xử lý yêu cầu của khách hàng qua điện thoại, email, và tin nhắn; giải đáp thắc mắc, quảng bá sản phẩm/dịch vụ; quản lý, thu thập, và xử lý dữ liệu khách hàng; thực hiện khảo sát, xây dựng báo cáo và đề xuất giải pháp; điều phối và hỗ trợ sự kiện khách hàng bằng cách xây dựng đề xuất, tư vấn, và tham gia trực tiếp trong thời gian diễn ra sự kiện.</p>',
+      requirements:
+        '<ul><li>Không yêu cầu kinh nghiệm, sẽ được đào tạo bài bản khi nhận việc, có kinh nghiệm làm việc là lợi thế.</li><li>Cẩn thận, tỉ mỉ và có trách nhiệm trong công việc.</li><li>Biết sắp xếp công việc hợp lý.</li><li>Giao tiếp thành thạo tiếng Anh và tiếng Việt.</li><li>Giọng nói lưu loát, không ngọng, không nói lắp.</li><li>Có kỹ năng văn phòng tốt, sử dụng thành thạo các công cụ Microsoft Office.</li><li>Đã có kinh nghiệm trong ngành dịch vụ là một lợi thế.</li></ul>        ',
+      advantages:
+        '<ul><li>Môi trường làm việc thân thiện, trẻ, hòa đồng, vui vẻ, tôn trọng cá nhân, đề cao học hỏi.</li><li>Hỗ trợ ăn trưa.</li><li>Được tham gia chế độ bảo hiểm y tế, bảo hiểm thất nghiệp và bảo hiểm xã hội sau khi ký hợp đồng chính thức.</li><li>Chế độ lương thưởng rõ ràng theo năng lực, trách nhiệm và có cơ hội thăng tiến cao.</li><li>Được tham gia các hoạt động bonding team hằng tháng, company trip hằng năm.</li><li>Thời gian làm việc linh hoạt.</li><li>Lương: thoả thuận, chưa bao gồm tip, service charge, commission bonus.</li></ul>        ',
+      company_id: 1,
+      salary_min: 10000,
+      salary_max: 20000,
+      expired_at: '2024-02-28T23:59:59Z',
+      years_of_experience: 0,
+      job_location: 'HCM, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 27,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 24,
+    },
+    create: {
+      title: 'Thực Tập Sinh Tiktok Content Creator',
+      description:
+        '<p>Bán hàng qua TikTok Shop, chỉnh sửa video bằng Capcut và quản lý kênh TikTok; công việc chi tiết sẽ được hướng dẫn trực tiếp; thời gian làm việc linh động theo lịch học của ứng viên (có thể làm online tại nhà).</p>',
+      requirements:
+        '<ul><li>Không yêu cầu kinh nghiệm</li><li>Tiếng Anh cơ bản đến khá</li><li>Nhanh nhẹn và chăm chỉ</li><li>Biết xem tiktok và chỉnh sửa Capcut là một lợi thế</li></ul>        ',
+      advantages:
+        '',
+      company_id: 1,
+      salary_min: 3000,
+      salary_max: 5000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 0,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 27,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 25,
+    },
+    create: {
+      title: 'Nhân Viên Kinh Doanh Online/ Kênh TMĐT',
+      description:
+        '<p>Tìm Nhân Viên Kinh Doanh Online/Phụ Trách Kênh Online cho thương hiệu Mỹ Phẩm Tóc - vnproin.com. Phát triển khách hàng Buôn/Sỉ/Lẻ trên Zalo, Facebook, Tiktok, sàn Thương Mại Điện Tử. Đăng bài, sáng tạo nội dung trên các kênh Zalo, Facebook, Tiktok, Sàn TMDT. Chăm sóc KH theo quy trình để tối đa hóa hiệu quả bán hàng. Tiếp nhận và giải đáp thắc mắc, theo dõi đơn hàng đến hoàn thành giao dịch. Thực hiện các công việc phát sinh theo chỉ đạo từ trưởng bộ phận và Ban Lãnh Đạo. Báo cáo kết quả công việc định kỳ hoặc khi có yêu cầu. Cơ hội thực tập và làm CTV NVKD Online liên tục.</p>',
+      requirements:
+        '<ul><li>Độ tuổi: Dưới 35 tuổi;</li><li>Sử dụng và hiểu biết về các kênh Mạng Xã Hội: Zalo, Facebook, Tiktok.</li><li>Có hiểu biết về vận hành các sàn thương mại điện tử (ví dụ như: Shopee, Tiktok shop, Lazada,...);</li><li>Nhanh nhẹn, chăm chỉ, trung thực, nhiệt tình, có trách nhiệm</li><li>Lợi thế các bạn đã có kinh nghiệm TMDT/ Tư vấn/ Telesales/ Bán hàng online</li><li>Kỹ năng giao tiếp tốt.</li></ul>        ',
+      advantages:
+        '<ul><li>Thu Nhập: Từ 10 triệu đến trên 30 triệu (Bao gồm: Lương cứng + Lương KPI + % Hoa hồng) hoặc đàm phán trao đổi theo năng lực và kế hoạch mục tiêu.</li><li>Phúc Lợi: <ul><li>Làm việc trong môi trường chuyên nghiệp - SẢN PHẨM TOP ĐẦU ƯA CHUỘNG VÀ PHÁT TRIỂN, môi trường trẻ năng động, thu nhập cao, có thể phát triển lên cấp Quản Lí và Phát triển chuyên môn kiến thức.</li><li>Thưởng các ngày Lễ/Tết, Lương tháng 13, Thưởng doanh thu cuối năm.</li><li>Các danh hiệu thi đua và vinh danh cá nhân cống hiến.</li><li>Tham quan, du lịch, nghỉ mát hàng năm.</li><li>Sử dụng các sản phẩm và dịch vụ VIP mà công ty hợp tác.</li><li>Được đào tạo Kinh doanh từ chuyên gia hàng đầu.</li><li>Thực hiện theo quyền lợi trong Hợp Đồng Lao Động, BHXH.</li></ul></li></ul>        ',
+      company_id: 7,
+      salary_min: 10000,
+      salary_max: 30000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 2,
+      job_location: 'London, UK',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 8,
+      is_domestic: false,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 26,
+    },
+    create: {
+      title: 'Kỹ Sư Cơ Khí / Thiết Kế Khuôn Mẫu',
+      description:
+        '<p>Chịu trách nhiệm về việc vẽ, thiết kế chi tiết máy móc và giám sát quá trình sản xuất, lắp ráp sản phẩm. Bóc tách vật tư theo bản vẽ sản xuất và xây dựng định mức vật tư cho sản phẩm. Quản lý thiết bị trong toàn nhà máy, tiếp nhận và bàn giao thiết bị, cũng như thực hiện quy trình công nghệ cho các thiết bị mới. Nghiên cứu và đề xuất các cải tiến để nâng cao hiệu quả sản xuất của máy móc và thiết bị. Bảo trì, sửa chữa và giải quyết sự cố của máy móc và thiết bị trong nhà máy.</p>',
+      requirements:
+        '<ul><li>Có ít nhất 2 năm kinh nghiệm trong lĩnh vực cơ khí, chế tạo máy.</li><li>Ưu tiên ứng viên đã làm việc cho các công ty gia công chế tạo khuôn mẫu.</li><li>Sử dụng thành thạo phần mềm thiết kế Autocad, 3D và các phần mềm ứng dụng trên máy tính.</li><li>Thành thạo các phương pháp nhận biết, phân loại và lựa chọn vật liệu cơ khí.</li><li>Thành thạo các thao tác lắp ráp, lắp đặt thiết bị, máy móc.</li><li>Thành thạo trong khâu bảo trì, bảo dưỡng các sản phẩm cơ khí.</li><li>Có kỹ năng gia công như: bào, hàn, phay, tiện...</li><li>Nhanh nhẹn, năng nổ, chịu khó học hỏi, chịu được áp lực cao trong công việc.</li></ul>        ',
+      advantages:
+        '',
+      company_id: 2,
+      salary_min: 12000,
+      salary_max: 20000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 2,
+      job_location: 'HCM, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 1,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 27,
+    },
+    create: {
+      title: 'Nhân Viên Kỹ Thuật Độ Xe Hơi',
+      description:
+        '<p>Nhận phân công từ Trưởng kỹ thuật và Trưởng cửa hàng cho các dự án kỹ thuật. Kiểm tra tình trạng xe trước thi công, báo cáo về lỗi, xước, và tình trạng xe cho Trưởng kỹ thuật và Nhân viên kinh doanh. Đảm bảo phụ tùng lắp đặt cho khách hàng đầy đủ và nguyên vẹn, thử nghiệm sản phẩm trước khi lắp đặt. Chuẩn bị vật tư cần thiết và triển khai thi công theo quy trình công ty. Yêu cầu hỗ trợ khi cần để đảm bảo tiến độ công việc và kiểm tra xe trước khi bàn giao để đảm bảo độ hoàn thiện, ổn định và an toàn.</p>',
+      requirements:
+        '<ul><li>Đã tốt nghiệp trung cấp nghề trở lên liên quan tới ngành Kỹ thuật ô tô.</li><li>Thành thạo các dụng cụ và máy móc liên quan để ngành Cơ khí và Điện.</li><li>Biết lắp cơ bản màn hình, cam 360, cam hành trình, độ đèn, bi gầm, sub, cảm biến, phụ kiện âm thanh là lợi thế.</li><li>Có hiểu biết cần thiết về các sản phẩm của công ty.</li><li>Giao tiếp tốt, khả năng học hỏi, tiếp thu kiến thức tốt. Có thái độ làm việc tốt, say mê công việc.</li><li>Độ tỉ mỉ và chính xác cao khi làm việc.</li></ul>        ',
+      advantages:
+        '<ul><li>Thu nhập: 7.000.000 – 15.000.000 (Lương cứng + Khoản thưởng Tuần/Tháng/KPI) + Trợ cấp ăn trưa + Phúc lợi (Sinh nhật, hiếu, hỉ, sinh con...) + Ngày nghỉ và ngày phép đầy đủ theo quy định + Môi trường làm việc trẻ trung, năng động và chuyên nghiệp, cơ hội học tập và phát triển chuyên môn.</li></ul>        ',
+      company_id: 10,
+      salary_min: 7000,
+      salary_max: 15000,
+      expired_at: '2024-03-31T23:59:59Z',
+      years_of_experience: 2,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 1,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 28,
+    },
+    create: {
+      title: 'Lập Trình Viên Ruby On Rail',
+      description:
+        '<p>Tham gia lập trình dự án công nghệ sử dụng Ruby on Rails cho khách hàng, thực hiện các giai đoạn nghiên cứu yêu cầu, phân tích, thiết kế, và nghiên cứu công nghệ của dự án. Đề xuất các giải pháp và cải tiến nhằm nâng cao chất lượng công trình.</p>',
+      requirements:
+        '<ul><li>Đã làm TypeScript và ReactJS</li><li>Có kiến thức và hiểu biết tốt về Ruby on Rails</li><li>Đã có hơn 1 năm kinh nghiệm</li></ul>        ',
+      advantages:
+        '<ul><li>Mức lương hấp dẫn, phù hợp với năng lực làm việc (10-20tr).</li><li>Review thành tích 2 lần/năm</li><li>Giờ làm việc: 8:30 - 17:30, thứ 2-thứ 6. Nghỉ t7 và CN</li><li>Được hưởng chế độ đãi ngộ tốt của công ty khi trở thành nhân viên: gửi xe, máy tính hiện đại, BHXH, bảo hiểm, du lịch công ty hàng năm,...</li><li>Lương tháng 13, Thưởng cuối năm,...</li><li>Công nhận và phần thưởng dựa trên hiệu suất của bạn</li><li>Cơ hội thăng tiến cao</li></ul>        ',
+      company_id: 8,
+      salary_min: 15000,
+      salary_max: 20000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 3,
+      job_location: 'HCM, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 17,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 29,
+    },
+    create: {
+      title: 'IT Support Engineers',
+      description:
+        '<p>Là đầu mối kỹ thuật chính hỗ trợ khách hàng doanh nghiệp và đối tác nước ngoài, khắc phục sự cố kỹ thuật liên quan đến Microsoft Dynamics CRM và Dynamics ERP, phát triển trong môi trường công việc nhanh và đầy thách thức, cam kết mang lại trải nghiệm khách hàng tốt nhất</p>',
+      requirements:
+        '<ul><li>Successful candidates will be part of a friendly, motivated, and committed talent team with attractive offers; Attractive salary from $800 to $1500, health insurance, company shuttle buses, annual summer vacation, and other allowances; FTown Campus provides facilities like a football ground, gym, and more.</li></ul>        ',
+      advantages:
+        '<ul><li>1. Lương, thưởng, bảo hiểm:</li><li>- 100% lương trong thời gian On Job Training</li><li>- Đóng bảo hiểm trên 100% lương</li><li>- Performance bonus/KPI bonus hàng quý và cuối năm</li><li>- Bảo hiểm sức khỏe PTI (ngoại trú 15 triệu/năm, nội trú 100 triệu/năm)</li><li>- Health check 1 năm/lần tại các bệnh viện lớn</li><li>2. Training & development:</li><li>- Native English instructor (từng giảng dạy tại British University Vietnam, ĐH Hà Nội, ĐH Quốc Gia HN, Language Link Vietnam...)</li><li>- Tham gia nhiều khóa đào tạo kĩ năng mềm: Cultivate Your Leadership Program, Unleash Your Potential Program...</li></ul>        ',
+      company_id: 6,
+      salary_min: 25000,
+      salary_max: 30000,
+      expired_at: '2024-02-28T23:59:59Z',
+      years_of_experience: 2,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 12,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 30,
+    },
+    create: {
+      title: 'Middle/Senior UI/UX Designer',
+      description:
+        '<p>Phối hợp với đội thiết kế giao diện phần mềm, xây dựng thiết kế tương tác đáp ứng, đảm bảo đồng nhất và tuân thủ quy tắc thiết kế và nhận diện thương hiệu. Làm việc với nhà phát triển để triển khai thiết kế UI/UX, kiểm tra khả năng sử dụng, và cập nhật với xu hướng và công nghệ mới.</p>',
+      requirements:
+        '<ul><li>Kinh nghiệm thiết kế giao diện và trải nghiệm người dùng.</li><li>Thành thạo Figma, có kinh nghiệm sử dụng Sketch, Adobe XD, hoặc Illustrator.</li><li>Hiểu biết về nguyên tắc thiết kế tương tác và đáp ứng.</li><li>Kiến thức về Material Design là một lợi thế.</li><li>Làm việc hiệu quả trong môi trường đa chức năng và nhóm.</li><li>Kiến thức về quy trình Agile, Scrum là một lợi thế.</li><li>Kỹ năng giao tiếp và làm việc nhóm tốt.</li><li>Khả năng đóng góp và xây dựng sản phẩm.</li></ul>        ',
+      advantages:
+        '<ul><li>Kinh nghiệm thiết kế giao diện và trải nghiệm người dùng.</li><li>Thành thạo Figma, có kinh nghiệm sử dụng Sketch, Adobe XD, hoặc Illustrator.</li><li>Hiểu biết về nguyên tắc thiết kế tương tác và đáp ứng.</li><li>Kiến thức về Material Design là một lợi thế.</li><li>Làm việc hiệu quả trong môi trường đa chức năng và nhóm.</li><li>Kiến thức về quy trình Agile, Scrum là một lợi thế.</li><li>Kỹ năng giao tiếp và làm việc nhóm tốt.</li><li>Khả năng đóng góp và xây dựng sản phẩm.</li></ul>        ',
+      company_id: 1,
+      salary_min: 15000,
+      salary_max: 25000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 3,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 28,
       is_domestic: true,
     },
     update: {},
