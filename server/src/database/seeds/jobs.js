@@ -14,6 +14,7 @@ const seedJobs = async (prisma) => {
       company_id: 1,
       salary_min: 15000,
       salary_max: 20000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -40,8 +41,9 @@ const seedJobs = async (prisma) => {
       company_id: 2,
       salary_min: 25000,
       salary_max: 40000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
@@ -66,6 +68,7 @@ const seedJobs = async (prisma) => {
       company_id: 3,
       salary_min: 20000,
       salary_max: 30000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -92,13 +95,14 @@ const seedJobs = async (prisma) => {
       company_id: 4,
       salary_min: 13000,
       salary_max: 18000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian, Làm từ xa',
       majorsId: 28,
-      is_domestic: false,
+      is_domestic: true,
     },
     update: {},
   });
@@ -118,6 +122,7 @@ const seedJobs = async (prisma) => {
       company_id: 5,
       salary_min: 10000,
       salary_max: 15000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -144,8 +149,9 @@ const seedJobs = async (prisma) => {
       company_id: 6,
       salary_min: 15000,
       salary_max: 23000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
@@ -170,13 +176,14 @@ const seedJobs = async (prisma) => {
       company_id: 7,
       salary_min: 17000,
       salary_max: 25000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 9,
-      is_domestic: false,
+      is_domestic: true,
     },
     update: {},
   });
@@ -196,6 +203,7 @@ const seedJobs = async (prisma) => {
       company_id: 8,
       salary_min: 10000,
       salary_max: 15000,
+      expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -222,13 +230,14 @@ const seedJobs = async (prisma) => {
       company_id: 9,
       salary_min: 15000,
       salary_max: 23000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Tokyo, Jp',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
       majorsId: 32,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -248,6 +257,7 @@ const seedJobs = async (prisma) => {
       company_id: 3,
       salary_min: 25000,
       salary_max: 30000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 1,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -274,8 +284,9 @@ const seedJobs = async (prisma) => {
       company_id: 4,
       salary_min: 17000,
       salary_max: 25000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Làm từ xa',
@@ -300,6 +311,7 @@ const seedJobs = async (prisma) => {
       company_id: 2,
       salary_min: 20000,
       salary_max: 30000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -326,6 +338,7 @@ const seedJobs = async (prisma) => {
       company_id: 10,
       salary_min: 25000,
       salary_max: 40000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -352,8 +365,9 @@ const seedJobs = async (prisma) => {
       company_id: 6,
       salary_min: 55000,
       salary_max: 70000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 5,
-      job_location: 'HoChiMinh, VN',
+      job_location: 'HCM, VN',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -378,6 +392,7 @@ const seedJobs = async (prisma) => {
       company_id: 8,
       salary_min: 45000,
       salary_max: 60000,
+      expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 4,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -404,6 +419,7 @@ const seedJobs = async (prisma) => {
       company_id: 3,
       salary_min: 35000,
       salary_max: 40000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -430,13 +446,14 @@ const seedJobs = async (prisma) => {
       company_id: 8,
       salary_min: 45000,
       salary_max: 60000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 4,
-      job_location: 'HaNoi, VN',
+      job_location: 'Bangkok, TL',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 1,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -457,6 +474,7 @@ const seedJobs = async (prisma) => {
       company_id: 5,
       salary_min: 50000,
       salary_max: 70000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -483,6 +501,7 @@ const seedJobs = async (prisma) => {
       company_id: 1,
       salary_min: 15000,
       salary_max: 20000,
+      expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 7,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -509,6 +528,7 @@ const seedJobs = async (prisma) => {
       company_id: 5,
       salary_min: 12000,
       salary_max: 16000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
       job_location: 'HCM, VN',
       thumbnail_url:
@@ -535,13 +555,14 @@ const seedJobs = async (prisma) => {
       company_id: 3,
       salary_min: 20000,
       salary_max: 35000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HaNoi, VN',
+      job_location: 'NY, US',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 19,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -561,6 +582,7 @@ const seedJobs = async (prisma) => {
       company_id: 5,
       salary_min: 18000,
       salary_max: 32000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -587,6 +609,7 @@ const seedJobs = async (prisma) => {
       company_id: 1,
       salary_min: 10000,
       salary_max: 20000,
+      expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 0,
       job_location: 'HCM, VN',
       thumbnail_url:
@@ -613,6 +636,7 @@ const seedJobs = async (prisma) => {
       company_id: 1,
       salary_min: 3000,
       salary_max: 5000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 0,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -639,13 +663,14 @@ const seedJobs = async (prisma) => {
       company_id: 7,
       salary_min: 10000,
       salary_max: 30000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'London, UK',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 8,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -665,6 +690,7 @@ const seedJobs = async (prisma) => {
       company_id: 2,
       salary_min: 12000,
       salary_max: 20000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HCM, VN',
       thumbnail_url:
@@ -691,6 +717,7 @@ const seedJobs = async (prisma) => {
       company_id: 10,
       salary_min: 7000,
       salary_max: 15000,
+      expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -717,6 +744,7 @@ const seedJobs = async (prisma) => {
       company_id: 8,
       salary_min: 15000,
       salary_max: 20000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HCM, VN',
       thumbnail_url:
@@ -743,6 +771,7 @@ const seedJobs = async (prisma) => {
       company_id: 6,
       salary_min: 25000,
       salary_max: 30000,
+      expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
       thumbnail_url:
@@ -769,6 +798,7 @@ const seedJobs = async (prisma) => {
       company_id: 1,
       salary_min: 15000,
       salary_max: 25000,
+      expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
       thumbnail_url:
