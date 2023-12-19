@@ -2,7 +2,7 @@ const seedCompanies = async (prisma) => {
   await prisma.company.create({
     data: {
       name: 'Instagram',
-      email: 'career@instagram.com',
+      email: 'itss2.hedspi@gmail.com',
       website: 'https://instagram.com',
       phone_number: '(406) 555-0120',
       hust_partner: true,
