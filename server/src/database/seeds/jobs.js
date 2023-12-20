@@ -16,7 +16,7 @@ const seedJobs = async (prisma) => {
       salary_max: 20000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
@@ -43,12 +43,12 @@ const seedJobs = async (prisma) => {
       salary_max: 40000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HCM, VN',
+      job_location: 'Manhattan, New York, USA',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
       majorsId: 15,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -70,7 +70,7 @@ const seedJobs = async (prisma) => {
       salary_max: 30000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian',
@@ -97,12 +97,12 @@ const seedJobs = async (prisma) => {
       salary_max: 18000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HCM, VN',
+      job_location: 'Westminster, London, United Kingdom',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian, Làm từ xa',
       majorsId: 28,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -124,7 +124,7 @@ const seedJobs = async (prisma) => {
       salary_max: 15000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
@@ -151,12 +151,12 @@ const seedJobs = async (prisma) => {
       salary_max: 23000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HCM, VN',
+      job_location: 'Shibuya, Tokyo, Japan',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
       majorsId: 29,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -178,7 +178,7 @@ const seedJobs = async (prisma) => {
       salary_max: 25000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HaNoi, VN',
+      job_location: 'Ninh Kieu, Can Tho, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -205,7 +205,7 @@ const seedJobs = async (prisma) => {
       salary_max: 15000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Thực tập',
@@ -232,12 +232,12 @@ const seedJobs = async (prisma) => {
       salary_max: 23000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'Tokyo, Jp',
+      job_location: 'Cau Giay, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Thực tập',
       majorsId: 32,
-      is_domestic: false,
+      is_domestic: true,
     },
     update: {},
   });
@@ -259,7 +259,7 @@ const seedJobs = async (prisma) => {
       salary_max: 30000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 1,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian',
@@ -286,12 +286,12 @@ const seedJobs = async (prisma) => {
       salary_max: 25000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
-      job_location: 'HCM, VN',
+      job_location: 'Prenzlauer Berg, Berlin, Germany',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Làm từ xa',
       majorsId: 27,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -313,7 +313,7 @@ const seedJobs = async (prisma) => {
       salary_max: 30000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hai Chau, Da Nang, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -340,7 +340,7 @@ const seedJobs = async (prisma) => {
       salary_max: 40000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian, Làm từ xa',
@@ -367,12 +367,12 @@ const seedJobs = async (prisma) => {
       salary_max: 70000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 5,
-      job_location: 'HCM, VN',
+      job_location: 'Le Marais, Paris, France',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 15,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -394,7 +394,7 @@ const seedJobs = async (prisma) => {
       salary_max: 60000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 4,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -421,7 +421,7 @@ const seedJobs = async (prisma) => {
       salary_max: 40000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -448,7 +448,7 @@ const seedJobs = async (prisma) => {
       salary_max: 60000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 4,
-      job_location: 'Bangkok, TL',
+      job_location: 'Westminster, London, United Kingdom',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -476,7 +476,7 @@ const seedJobs = async (prisma) => {
       salary_max: 70000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
-      job_location: 'HaNoi, VN',
+      job_location: 'District 1, Ho Chi Minh City, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -503,7 +503,7 @@ const seedJobs = async (prisma) => {
       salary_max: 20000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 7,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -530,7 +530,7 @@ const seedJobs = async (prisma) => {
       salary_max: 16000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
-      job_location: 'HCM, VN',
+      job_location: 'Thanh Khe, Da Nang, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -557,12 +557,12 @@ const seedJobs = async (prisma) => {
       salary_max: 35000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'NY, US',
+      job_location: 'Cau Giay, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 19,
-      is_domestic: false,
+      is_domestic: true,
     },
     update: {},
   });
@@ -578,13 +578,13 @@ const seedJobs = async (prisma) => {
       requirements:
         '<ul><li>Có từ 2 năm kinh nghiệm triển khai các sản phẩm CNTT/ATTT</li><li>Tốt nghiệp ĐH/CĐ, chuyên ngành: CNTT, Điện tử viễn thông, An toàn thông tin</li><li>Có kiến thức, kinh nghiệm về các hệ điều hành linux là bắt buộc (Ubuntu, Debian, Centos...), có kiến thức cơ bản về hệ thống mạng, TCP/IP Routing, Switching...</li><li>Có kiến thức về các hệ thống ảo hóa: vmware esxi, vcenter hoặc tương đương</li><li>Có kinh nghiệm và kỹ năng làm việc khách hàng</li><li>Có chứng chỉ mạng, Linux, bảo mật là lợi thế</li><li>Có khả năng đọc hiểu tiếng Anh tốt, trình độ tương đương TOEIC 550 trở lên</li></ul>        ',
       advantages:
-        '',
+      '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm</li><li>Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn</li><li>Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng</li><li>Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế</li></ul>',
       company_id: 5,
       salary_min: 18000,
       salary_max: 32000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -611,12 +611,12 @@ const seedJobs = async (prisma) => {
       salary_max: 20000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 0,
-      job_location: 'HCM, VN',
+      job_location: 'Shibuya, Tokyo, Japan',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 27,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -632,13 +632,13 @@ const seedJobs = async (prisma) => {
       requirements:
         '<ul><li>Không yêu cầu kinh nghiệm</li><li>Tiếng Anh cơ bản đến khá</li><li>Nhanh nhẹn và chăm chỉ</li><li>Biết xem tiktok và chỉnh sửa Capcut là một lợi thế</li></ul>        ',
       advantages:
-        '',
+      '<ul><li>Thời gian làm việc: Thứ 2-thứ 6: 8h30-17h, thứ 7: 8h30-12h</li><li>Mức lương: thỏa thuận, xứng đáng với năng lực</li><li>Chế độ nghỉ phép năm, nghỉ lễ, Tết theo quy định</li><li>Tham gia BHXH, BHTN, BHYT đầy đủ</li><li>Thưởng lễ 30/04, 01/05, 01/06, 02/09, tết dương lịch, âm lịch,...</li><li>Xét nâng lương định kỳ</li><li>Môi trường làm việc năng động, hòa đồng, thân thiện, sếp tận tâm, nhiệt tình</li><li>Được tham gia vào các khóa đào tạo, nâng cao năng lực của công ty</li></ul>',
       company_id: 1,
       salary_min: 3000,
       salary_max: 5000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 0,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -665,12 +665,12 @@ const seedJobs = async (prisma) => {
       salary_max: 30000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'London, UK',
+      job_location: 'Cau Giay, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 8,
-      is_domestic: false,
+      is_domestic: true,
     },
     update: {},
   });
@@ -686,13 +686,13 @@ const seedJobs = async (prisma) => {
       requirements:
         '<ul><li>Có ít nhất 2 năm kinh nghiệm trong lĩnh vực cơ khí, chế tạo máy.</li><li>Ưu tiên ứng viên đã làm việc cho các công ty gia công chế tạo khuôn mẫu.</li><li>Sử dụng thành thạo phần mềm thiết kế Autocad, 3D và các phần mềm ứng dụng trên máy tính.</li><li>Thành thạo các phương pháp nhận biết, phân loại và lựa chọn vật liệu cơ khí.</li><li>Thành thạo các thao tác lắp ráp, lắp đặt thiết bị, máy móc.</li><li>Thành thạo trong khâu bảo trì, bảo dưỡng các sản phẩm cơ khí.</li><li>Có kỹ năng gia công như: bào, hàn, phay, tiện...</li><li>Nhanh nhẹn, năng nổ, chịu khó học hỏi, chịu được áp lực cao trong công việc.</li></ul>        ',
       advantages:
-        '',
+      '<ul><li>Thu nhập: Theo năng lực, trung bình 10-15 triệu/tháng. Thời gian thử việc ngắn, có đào tạo và phúc lợi đầy đủ. Môi trường làm việc thân thiện và cơ hội phát triển.</li></ul>        ',
       company_id: 2,
       salary_min: 12000,
       salary_max: 20000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HCM, VN',
+      job_location: 'Thanh Khe, Da Nang, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -719,7 +719,7 @@ const seedJobs = async (prisma) => {
       salary_max: 15000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Cau Giay, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -746,12 +746,12 @@ const seedJobs = async (prisma) => {
       salary_max: 20000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HCM, VN',
+      job_location: 'Manhattan, New York, USA',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
       majorsId: 17,
-      is_domestic: true,
+      is_domestic: false,
     },
     update: {},
   });
@@ -773,7 +773,7 @@ const seedJobs = async (prisma) => {
       salary_max: 30000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 2,
-      job_location: 'HaNoi, VN',
+      job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -800,7 +800,7 @@ const seedJobs = async (prisma) => {
       salary_max: 25000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'HaNoi, VN',
+      job_location: 'Cau Giay, Ha Noi, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
