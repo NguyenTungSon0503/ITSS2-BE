@@ -97,7 +97,7 @@ const seedJobs = async (prisma) => {
       salary_max: 18000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
-      job_location: 'Westminster, London, United Kingdom',
+      job_location: 'Tay Son, Da Nang, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian, Toàn thời gian, Làm từ xa',
@@ -448,7 +448,7 @@ const seedJobs = async (prisma) => {
       salary_max: 60000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 4,
-      job_location: 'Westminster, London, United Kingdom',
+      job_location: 'Tay Son, Da Nang, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -476,7 +476,7 @@ const seedJobs = async (prisma) => {
       salary_max: 70000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
-      job_location: 'District 1, Ho Chi Minh City, Viet Nam',
+      job_location: 'Tay Son, Da Nang, Viet Nam',
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
@@ -599,7 +599,7 @@ const seedJobs = async (prisma) => {
       id: 23,
     },
     create: {
-      title: 'Nhân Viên Quản Lý Quan Hệ Khách Hàng',
+      title: 'Nhân Viên Quản Lý',
       description:
         '<p>Tiếp nhận và xử lý yêu cầu của khách hàng qua điện thoại, email, và tin nhắn; giải đáp thắc mắc, quảng bá sản phẩm/dịch vụ; quản lý, thu thập, và xử lý dữ liệu khách hàng; thực hiện khảo sát, xây dựng báo cáo và đề xuất giải pháp; điều phối và hỗ trợ sự kiện khách hàng bằng cách xây dựng đề xuất, tư vấn, và tham gia trực tiếp trong thời gian diễn ra sự kiện.</p>',
       requirements:
@@ -626,7 +626,7 @@ const seedJobs = async (prisma) => {
       id: 24,
     },
     create: {
-      title: 'Thực Tập Sinh Tiktok Content Creator',
+      title: 'Thực Tập Sinh Tiktok Dance',
       description:
         '<p>Bán hàng qua TikTok Shop, chỉnh sửa video bằng Capcut và quản lý kênh TikTok; công việc chi tiết sẽ được hướng dẫn trực tiếp; thời gian làm việc linh động theo lịch học của ứng viên (có thể làm online tại nhà).</p>',
       requirements:
@@ -653,7 +653,7 @@ const seedJobs = async (prisma) => {
       id: 25,
     },
     create: {
-      title: 'Nhân Viên Kinh Doanh Online/ Kênh TMĐT',
+      title: 'Nhân Viên Kinh Doanh Online',
       description:
         '<p>Tìm Nhân Viên Kinh Doanh Online/Phụ Trách Kênh Online cho thương hiệu Mỹ Phẩm Tóc - vnproin.com. Phát triển khách hàng Buôn/Sỉ/Lẻ trên Zalo, Facebook, Tiktok, sàn Thương Mại Điện Tử. Đăng bài, sáng tạo nội dung trên các kênh Zalo, Facebook, Tiktok, Sàn TMDT. Chăm sóc KH theo quy trình để tối đa hóa hiệu quả bán hàng. Tiếp nhận và giải đáp thắc mắc, theo dõi đơn hàng đến hoàn thành giao dịch. Thực hiện các công việc phát sinh theo chỉ đạo từ trưởng bộ phận và Ban Lãnh Đạo. Báo cáo kết quả công việc định kỳ hoặc khi có yêu cầu. Cơ hội thực tập và làm CTV NVKD Online liên tục.</p>',
       requirements:
