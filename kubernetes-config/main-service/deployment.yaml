@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: main-service
+  namespace: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: main-service
+  template:
+    metadata:
+      labels:
+        app: main-service
+    spec:
+      containers:
+        - name: main-service
+          image: docker.io/orochiteam/itss2:k8s-mainservice
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - configMapRef:
+                name: main-service-cfm
+            - secretRef:
+                name: postgres-credentials
+            - secretRef:
+                name: ggdriver-credentials
+            - secretRef:
+                name: rabbitmq-credentials
+          resources:
+            limits:
+              cpu: "1"
+              memory: "512Mi"
+            requests:
+              cpu: "0.5"
+              memory: "256Mi"
