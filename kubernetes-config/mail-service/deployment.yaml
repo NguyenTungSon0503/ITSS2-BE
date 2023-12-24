@@ -13,6 +13,22 @@ spec:
       labels:
         app: mail-service
     spec:
+      initContainers:
+        - name: wait-for-rabbitmq
+          image: busybox
+          command:
+            [
+              "sh",
+              "-c",
+              "until nc -zv rabbitmq-svc.rabbitmq 5672; do echo waiting for rabbitmq; sleep 2; done;",
+            ]
+          resources:
+            requests:
+              cpu: 1m
+              memory: 50Mi
+            limits:
+              cpu: 75m
+              memory: 128Mi
       containers:
         - name: mail-service
           image: docker.io/orochiteam/itss2:k8s-mailservice
