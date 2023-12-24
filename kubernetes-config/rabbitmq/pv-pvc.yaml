@@ -12,6 +12,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   hostPath:
     path: /rabbitmq-data
+    type: DirectoryOrCreate
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -25,4 +26,3 @@ spec:
     requests:
       storage: 3Gi
   storageClassName: standard
-
