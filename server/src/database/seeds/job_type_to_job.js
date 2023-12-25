@@ -381,6 +381,66 @@ const seedJobTypeToJobs = async (prisma) => {
       typeId: 2,
     },
   });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 31,
+      typeId: 1,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 31,
+      typeId: 2,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 32,
+      typeId: 2,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 32,
+      typeId: 3,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 33,
+      typeId: 2,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 33,
+      typeId: 4,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 34,
+      typeId: 1,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 34,
+      typeId: 3,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 35,
+      typeId: 1,
+    },
+  });
+  await prisma.jobTypeToJob.create({
+    data: {
+      jobId: 35,
+      typeId: 3,
+    },
+  });
 };
 
 export default seedJobTypeToJobs;

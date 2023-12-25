@@ -74,7 +74,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Bán thời gian',
-      majorsId: 30,
+      majorsId: 31,
       is_domestic: true,
     },
     update: {},
@@ -371,7 +371,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      majorsId: 15,
+      majorsId: 13,
       is_domestic: false,
     },
     update: {},
@@ -480,7 +480,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      majorsId: 15,
+      majorsId: 20,
       is_domestic: true,
     },
     update: {},
@@ -615,7 +615,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      majorsId: 27,
+      majorsId: 24,
       is_domestic: false,
     },
     update: {},
@@ -642,7 +642,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      majorsId: 27,
+      majorsId: 25,
       is_domestic: true,
     },
     update: {},
@@ -696,7 +696,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      majorsId: 1,
+      majorsId: 2,
       is_domestic: true,
     },
     update: {},
@@ -723,7 +723,7 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      majorsId: 1,
+      majorsId: 3,
       is_domestic: true,
     },
     update: {},
@@ -804,10 +804,146 @@ const seedJobs = async (prisma) => {
       thumbnail_url:
         'https://example.com/images/graphic_designer_thumbnail.jpg',
       //jobs_type: 'Toàn thời gian',
-      majorsId: 28,
+      majorsId: 26,
       is_domestic: true,
     },
     update: {},
   });
+
+  await prisma.job.upsert({
+    where: {
+      id: 31,
+    },
+    create: {
+      title: 'Giáo Viên Tiếng Anh Online',
+      description:
+        '<p>Giảng dạy tiếng Anh cho học sinh từ 5-14 tuổi về phát âm, ngữ pháp, từ vựng theo học liệu của Edupia. Sử dụng mô hình lớp với 2 học sinh, giảng dạy online qua phần mềm Classin. Tham gia các hoạt động phong trào và lễ tết cùng đồng nghiệp. Tham gia đào tạo trực tuyến để nâng cao kỹ năng sư phạm.</p>',
+      requirements:
+        '<ul><li>Ứng viên từ 19-35 tuổi, có khả năng giao tiếp tiếng Anh tốt, phát âm chuẩn.</li><li>Có chứng chỉ tiếng Anh hoặc là sinh viên khoa sư phạm tiếng Anh là một lợi thế.</li><li>Có kinh nghiệm gia sư, trợ giảng là lợi thế.</li><li>Có đam mê giảng dạy và định hướng gắn bó lâu dài với công việc (từ 6 tháng trở lên).</li><li>Có máy tính đảm bảo kết nối Internet tốt, camera, mic tốt phục vụ cho việc giảng dạy trực tuyến.</li><li>Làm việc tối thiểu 15 ca/tuần (45/ca) các buổi tối thứ 2-CN, từ 18h-21h45, đặc biệt có thể làm các ca tối cuối tuần.</li></ul>        ',
+      advantages:
+        '<ul><li>Thu nhập: lương khởi điểm 50-65k/ca 45, tương đương trung bình 66-87k/h bao gồm lương cứng và thưởng tuỳ vị trí (tổng thu nhập dao động từ 3tr - 11tr/tháng)</li><li>Mức lương cao hơn 20% - 50% so với công ty cùng ngành</li><li>Đánh giá tăng lương định kỳ, mức tối đa nhận được 115k/ca 45</li><li>Đăng ký theo lịch rảnh cá nhân</li><li>Hợp tác với học sinh để tạo ra các lớp học với trải nghiệm, đào tạo E-learning chuẩn thế kỷ 21 "Đem thế giới vào lớp học và kết nối lớp học với cuộc sống"</li><li>Được làm việc trong môi trường chuyên nghiệp và đội ngũ quản lý có kinh nghiệm và trình độ cao trong lĩnh vực giáo dục.</li><li>Educa luôn tạo cơ hội cho những người ham học hỏi và muốn phát triển bản thân, đồng thời đánh giá công bằng theo năng lực của ứng viên.</li><li>Sau 6 tháng làm việc, nhân viên sẽ nhận được chứng nhận giảng dạy tại trung tâm, có hỗ trợ đóng dấu thực tập nếu cần.</li></ul>        ',
+      company_id: 9,
+      salary_min: 15000,
+      salary_max: 20000,
+      expired_at: '2024-01-20T23:59:59Z',
+      years_of_experience: 2,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 5,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 32,
+    },
+    create: {
+      title: 'Giáo Viên IELTS - Giáo Viên Tiếng Anh',
+      description:
+        '<p>Thực hiện giảng dạy chương trình IELTS và đứng lớp theo mô hình linh động hoặc giáo án có sẵn. Giao bài tập, chấm và chữa bài cho học viên. Chuẩn bị tài liệu học và hồ sơ học viên. Theo dõi và cập nhật tiến độ học tập trên hệ thống quản lý. Trao đổi với học viên về tình hình học tập và tư vấn phương pháp học tập hiệu quả.</p>',
+      requirements:
+        '<ul><li>Học vấn/ bằng cấp: tốt nghiệp Đại học các chuyên ngành, ưu tiên liên quan đến tiếng Anh hoặc sư phạm tiếng Anh. Chứng chỉ IELTS từ 7.0 trở lên.</li><li>Kinh nghiệm: Tối thiểu có 6 tháng kinh nghiệm giảng dạy và gia sư IELTS.</li><li>Kỹ năng: Giao tiếp và tương tác tốt, kỹ năng xử lý tình huống.</li></ul>        ',
+      advantages:
+        '<ul><li>Mức lương: Thu nhập: 10M - 15M. Mức lương thỏa thuận theo năng lực ứng viên. Được đào tạo hội nhập và đào tạo chuyên sâu để nâng cao nghiệp vụ. Phụ cấp và quyền lợi: Phụ cấp ăn ca và chi phí hoạt động tại trung tâm: 300.000 VNĐ/ tháng. Phụ cấp chứng chỉ tiếng Anh còn hạn (lên đến 2,000,000 VNĐ/tháng). Chế độ quỹ khuyến học hàng tháng dành cho nhân viên có con nhỏ dưới 16 tuổi: 500.000 VNĐ/ tháng. Học tiếng Anh miễn phí tại trung tâm. Thưởng theo các ngày sinh nhật, lễ tết</li></ul>        ',
+      company_id: 3,
+      salary_min: 25000,
+      salary_max: 30000,
+      expired_at: '2024-03-31T23:59:59Z',
+      years_of_experience: 3,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 6,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 33,
+    },
+    create: {
+      title: 'Thực Tập Sinh Cloud',
+      description:
+        '<p>Huấn luyện toàn thời gian trong 2 tháng, tập trung vào kiến thức tổng quan về hệ thống On Prem, bao gồm Network, System, Linux, Window, VMware, Hyper-V. Đào tạo về các dịch vụ Public Cloud như AWS, Azure theo lộ trình cụ thể. Thực hành ngay tại dự án thực tế để ứng viên có cơ hội áp dụng kiến thức đã học vào các công việc hàng ngày.</p>',
+      requirements:
+        '<ul><li>Sinh viên năm cuối hoặc đã tốt nghiệp các trường CNTT, có thể thực tập fulltime</li><li>Có kiến thức căn bản về hệ điều hành (Linux, Window), Database, Network</li><li>Có định hướng phát triển trong lĩnh vực Cloud Computing</li><li>Tiếng Anh tốt là một lợi thế</li><li>Kỹ năng giao tiếp và làm việc nhóm tốt</li><li>Nhanh nhẹn, chủ động, có tính tự giác, tự học tốt</li><li>Có kỹ năng research, kỹ năng tìm kiếm</li><li>Có kiến thức về Linux, Network, Docker, Ansible, Storage là một lợi thế</li></ul>        ',
+      advantages:
+        '<ul><li>Phụ cấp: hưởng theo chính sách thực tập sinh hiện tại của công ty</li><li>Được đào tạo chuyên sâu về Cloud Computing bởi những chuyên gia hàng đầu trong ngành</li><li>Được hưởng các chế độ phúc lợi, đãi ngộ hấp dẫn, chế độ BHXH – BHYT và chế độ khác theo quy định Pháp luật và Công ty khi trở thành nhân viên chính thức</li><li>Môi trường làm việc năng động, sáng tạo, chuyên nghiệp, thân thiện</li><li>Được tham gia các khóa đào tạo nội bộ và bên ngoài để nâng cao nghiệp vụ</li><li>Nghỉ thứ 7, Chủ nhật + Nghỉ phép theo Quy định của Pháp luật hiện hành</li><li>Khi trở thành nhân viên chính thức Lương T13, Thưởng lễ Tết theo quy định của Công ty. Xét tăng lương 1 năm 1 lần</li></ul>        ',
+      company_id: 4,
+      salary_min: 23000,
+      salary_max: 27000,
+      expired_at: '2024-01-31T23:59:59Z',
+      years_of_experience: 4,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 10,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 34,
+    },
+    create: {
+      title: 'Python Developer',
+      description:
+        '<p>Tổ chức và triển khai giải pháp An toàn thông tin và Truyền thông (ATTT), bao gồm tiếp nhận, nghiên cứu giải pháp, thực nghiệm hệ thống, thiết lập môi trường, cấu hình, và triển khai các dịch vụ sản phẩm theo hợp đồng đã ký kết với khách hàng và nội bộ tập đoàn, nhằm đảm bảo chất lượng và tuân thủ Service Level Agreement (SLA). Xử lý các sự cố và lỗi xuất hiện trong quá trình triển khai giải pháp ATTT tại site của khách hàng, hướng dẫn và đào tạo người sử dụng về việc sử dụng và quản lý sản phẩm ATTT sau khi triển khai. Quản lý nguồn lực triển khai để đảm bảo chất lượng và tiến độ, đồng thời duy trì và nâng cấp các phiên bản sản phẩm ATTT, đồng bộ phiên bản để cung cấp khách hàng những sản phẩm được cập nhật và nâng cấp.</p>',
+      requirements:
+        '<ul><li>Có từ 2 năm kinh nghiệm triển khai các sản phẩm CNTT/ATTT</li><li>Tốt nghiệp ĐH/CĐ, chuyên ngành: CNTT, Điện tử viễn thông, An toàn thông tin</li><li>Có kiến thức, kinh nghiệm về các hệ điều hành linux là bắt buộc (Ubuntu, Debian, Centos...), có kiến thức cơ bản về hệ thống mạng, TCP/IP Routing, Switching...</li><li>Có kiến thức về các hệ thống ảo hóa: vmware esxi, vcenter hoặc tương đương</li><li>Có kinh nghiệm và kỹ năng làm việc khách hàng</li><li>Có chứng chỉ mạng, Linux, bảo mật là lợi thế</li><li>Có khả năng đọc hiểu tiếng Anh tốt, trình độ tương đương TOEIC 550 trở lên</li></ul>        ',
+      advantages:
+      '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm</li><li>Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn</li><li>Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng</li><li>Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế</li></ul>',
+      company_id: 2,
+      salary_min: 17000,
+      salary_max: 25000,
+      expired_at: '2024-01-15T23:59:59Z',
+      years_of_experience: 2,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 11,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
+  await prisma.job.upsert({
+    where: {
+      id: 35,
+    },
+    create: {
+      title: 'Nhân Viên Kiếm Soát Nội Bộ Mảng Camera',
+      description:
+        '<p>Giám sát các cơ sở kinh doanh thông qua hệ thống camera an ninh, bao gồm giám sát nghiệp vụ thu ngân, chất lượng dịch vụ khách hàng, và tuân thủ nội quy của nhân viên. Phát hiện và báo cáo kịp thời các sai phạm và tình huống phát sinh cho quản lý. Thực hiện báo cáo giám sát, đảm bảo bảo mật thông tin hệ thống camera, và thực hiện các công việc khác theo sự phân công của quản lý trực tiếp.</p>',
+      requirements:
+        '<ul><li>Nam 23-35 tuổi, sức khỏe tốt; Kiến thức về thanh tra, kiểm soát qua camera; Kỹ năng giám sát, giao tiếp, tin học văn phòng; Trách nhiệm, tích cực, năng động; Tốt nghiệp cao đẳng trở lên.</li></ul>        ',
+      advantages:
+        '<ul><li>Môi trường chuyên nghiệp, trẻ trung, hiện đại, nhiều cơ hội phát triển nghề nghiệp.</li><li>Phát triển sản phẩm mũi nhọn, triển khai cho tổ chức chính phủ và doanh nghiệp lớn.</li><li>Thách thức cao, làm việc với đội ngũ chuyên gia ATTT.</li><li>Thời gian linh hoạt, package thu nhập hấp dẫn, thưởng hàng tháng, quý, năm.</li><li>Hỗ trợ thi chứng chỉ, 12 ngày phép, bảo hiểm sức khỏe, gói quà phúc lợi.</li><li>Happy time từ 4h - 4h30 hàng ngày.</li></ul>        ',
+      company_id: 2,
+      salary_min: 15000,
+      salary_max: 200000,
+      expired_at: '2024-01-30T23:59:59Z',
+      years_of_experience: 6,
+      job_location: 'HaNoi, VN',
+      thumbnail_url:
+        'https://example.com/images/graphic_designer_thumbnail.jpg',
+      //jobs_type: 'Toàn thời gian',
+      majorsId: 21,
+      is_domestic: true,
+    },
+    update: {},
+  });
+
 };
 export default seedJobs;
