@@ -125,10 +125,10 @@ const jobController = {
               email: true,
             },
           },
-          majors :{
+          majors: {
             select: {
               name: true,
-            }
+            },
           },
           jobTypeRelations: {
             select: {
@@ -139,13 +139,94 @@ const jobController = {
               },
             },
           },
-        }
+        },
       });
-      if(job) {
+      if (job) {
         return res.status(200).json(job);
       } else {
         return res.status(404).json({ message: `Job ${id} not found` });
       }
+    } catch (error) {
+      next(error);
+      throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
+    }
+  },
+  getJobWithHustPartnerCompany: async (req, res, next) => {
+    let hust_partner = req.query.hust_partner;
+    const hust_partnerBoolean = hust_partner === 'true';
+    try {
+      const jobWithHustPartnerCompany = await prisma.job.findMany({
+        where: {
+          company: {
+            hust_partner: hust_partnerBoolean,
+          },
+        },
+        include: {
+          company: {
+            select: {
+              name: true,
+              hust_partner: true,
+              logo_url: true,
+            },
+          },
+          jobTypeRelations: {
+            select: {
+              type: {
+                select: {
+                  name: true,
+                },
+              },
+            },
+          },
+        },
+      });
+      return res.status(200).json(jobWithHustPartnerCompany);
+    } catch (error) {
+      next(error);
+      throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
+    }
+  },
+  getAllJobTitle: async (req, res, next) => {
+    try {
+      const allJobTitles = await prisma.job.findMany({
+        select: {
+          title: true,
+        },
+      });
+      const jobTitlesArray = allJobTitles.map((job) => job.title);
+      return res.status(200).json(jobTitlesArray);
+    } catch (error) {
+      next(error);
+      throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
+    }
+  },
+  getJobWithTitle: async (req, res, next) => {
+    const job_title = req.query.job_title;
+    try {
+      const jobWithTitle = await prisma.job.findMany({
+        where: {
+          title: job_title,
+        },
+        include: {
+          company: {
+            select: {
+              name: true,
+              hust_partner: true,
+              logo_url: true,
+            },
+          },
+          jobTypeRelations: {
+            select: {
+              type: {
+                select: {
+                  name: true,
+                },
+              },
+            },
+          },
+        },
+      });
+      return res.status(200).json(jobWithTitle);
     } catch (error) {
       next(error);
       throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
