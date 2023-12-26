@@ -5,5 +5,6 @@ import upload from '../utils/multer.js';
 const router = express.Router();
 
 router.post('/', upload.single('file'), applyController.create);
+router.get('/:userId', applyController.getApplyJobs);
 
 export default router
