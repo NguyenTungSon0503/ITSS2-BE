@@ -51,48 +51,6 @@ const applyController = {
       throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
     }
   },
-  getApplyJobs: async (req, res, next) => {
-    const { userId } = req.params;
-    const userIdInt = parseInt(userId);
-    try{
-      const job = await prisma.applyJob.findMany({
-        where: { userId: userIdInt },
-        include: {
-          job_id: {
-            select: {
-              title: true,
-              job_location: true,
-              salary_min: true,
-              salary_max: true,
-              company: {
-                select: {
-                  logo_url: true,
-                  hust_partner: true,
-                },
-              },
-              jobTypeRelations: {
-                select: {
-                  type: {
-                    select: {
-                      name: true,
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      });
-      if(job) {
-        return res.status(200).json(job);
-      } else {
-        return res.status(404).json({ message: `User ${userId} don't have apply job` });
-      }
-    } catch (error) {
-      next(error);
-      throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
-    }
-  },
 };
 
 export default applyController;
