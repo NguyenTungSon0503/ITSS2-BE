@@ -110,15 +110,16 @@ model Majors {
 }
 
 model ApplyJob {
-  id       Int      @id @default(autoincrement())
-  user_id  User     @relation(fields: [userId], references: [id])
-  job_id   Job      @relation(fields: [jobId], references: [id])
-  userId   Int
-  jobId    Int
-  status   Status   @default(PENDING)
-  apply_at DateTime @default(now()) @db.Timestamptz(6)
-  message  String?  @db.Text
-  cv_url   String   @db.VarChar(255)
+  id         Int      @id @default(autoincrement())
+  user_id    User     @relation(fields: [userId], references: [id])
+  job_id     Job      @relation(fields: [jobId], references: [id])
+  userId     Int
+  jobId      Int
+  status     Status   @default(PENDING)
+  apply_at   DateTime @default(now()) @db.Timestamptz(6)
+  message    String?  @db.Text
+  cv_url     String   @db.VarChar(255)
+  created_at DateTime @default(now()) @db.Timestamptz(6)
 
   @@map("apply_jobs")
 }
