@@ -12,7 +12,7 @@ const seedApplyJobs = async (prisma) => {
 
   await prisma.applyJob.create({
     data: {
-      userId: 2,
+      userId: 1,
       jobId: 3,
       status: 'APPROVE',
       message:
@@ -22,7 +22,7 @@ const seedApplyJobs = async (prisma) => {
   });
   await prisma.applyJob.create({
     data: {
-      userId: 2,
+      userId: 1,
       jobId: 5,
       status: 'APPROVE',
       message:

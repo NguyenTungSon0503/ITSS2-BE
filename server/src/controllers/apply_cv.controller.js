@@ -1,9 +1,9 @@
-import sendEmail from '../service/nodemailer.js';
-import deleteFile from '../utils/deleteFile.js';
+import { StatusCodes } from 'http-status-codes';
 import { googleDriverUpload } from '../service/google-drive.js';
+import sendEmail from '../service/nodemailer.js';
 import prisma from '../service/prisma.js';
 import ApiError from '../utils/ApiError.js';
-import { StatusCodes } from 'http-status-codes';
+import deleteFile from '../utils/deleteFile.js';
 
 const applyController = {
   create: async (req, res, next) => {
@@ -54,7 +54,7 @@ const applyController = {
   getApplyJobs: async (req, res, next) => {
     const { userId } = req.params;
     const userIdInt = parseInt(userId);
-    try{
+    try {
       const job = await prisma.applyJob.findMany({
         where: { userId: userIdInt },
         include: {
@@ -82,11 +82,16 @@ const applyController = {
             },
           },
         },
+        orderBy: {
+          apply_at: 'desc',
+        },
       });
-      if(job) {
+      if (job) {
         return res.status(200).json(job);
       } else {
-        return res.status(404).json({ message: `User ${userId} don't have apply job` });
+        return res
+          .status(404)
+          .json({ message: `User ${userId} don't have apply job` });
       }
     } catch (error) {
       next(error);

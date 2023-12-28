@@ -1,6 +1,6 @@
+import { StatusCodes } from 'http-status-codes';
 import prisma from '../service/prisma.js';
 import ApiError from '../utils/ApiError.js';
-import { StatusCodes } from 'http-status-codes';
 
 const jobController = {
   getAll: async (req, res, next) => {
@@ -232,5 +232,104 @@ const jobController = {
       throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
     }
   },
+  searchWithOption: async (req, res, next) => {
+    const {
+      keyword,
+      location,
+      hust_partner,
+      max_years_of_experience,
+      min_years_of_experience,
+      min_salary,
+      max_salary,
+      type,
+      company,
+      major,
+    } = req.query;
+
+    try {
+      const allJobs = await prisma.job.findMany({
+        where: {
+          OR: [
+            {
+              title: {
+                contains: keyword,
+                mode: 'insensitive',
+              },
+            },
+            {
+              description: {
+                contains: keyword,
+                mode: 'insensitive',
+              },
+            },
+            {
+              company: {
+                name: {
+                  contains: keyword,
+                  mode: 'insensitive',
+                },
+              },
+            },
+          ],
+          job_location: {
+            contains: location,
+            mode: 'insensitive',
+          },
+          company: hust_partner
+            ? { hust_partner: hust_partner === 'true' }
+            : {},
+          years_of_experience: max_years_of_experience
+            ? {
+                lte: parseInt(max_years_of_experience),
+                gte: parseInt(min_years_of_experience),
+              }
+            : {
+                gte: parseInt(min_years_of_experience),
+              },
+          salary_min: {
+            gte: parseInt(min_salary),
+          },
+          salary_max: max_salary ? { lte: parseInt(max_salary) } : {},
+          jobTypeRelations: {
+            some: {
+              type: type
+                ? {
+                    id: {
+                      in: type.split(',').map((item) => parseInt(item)),
+                    },
+                  }
+                : {},
+            },
+          },
+          is_domestic: company ? company === 'vietnam' : {},
+          majorsId: major ? parseInt(major) : {},
+        },
+        include: {
+          company: {
+            select: {
+              name: true,
+              hust_partner: true,
+              logo_url: true,
+            },
+          },
+          jobTypeRelations: {
+            select: {
+              type: {
+                select: {
+                  name: true,
+                  id: true,
+                },
+              },
+            },
+          },
+        },
+      });
+      return res.status(200).json(allJobs);
+    } catch (error) {
+      next(error);
+      throw new ApiError(StatusCodes.INTERNAL_SERVER_ERROR, error.message);
+    }
+  },
 };
+
 export default jobController;

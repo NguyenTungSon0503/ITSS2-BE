@@ -12,8 +12,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Mức lương cạnh tranh, thu nhập lên tới 300 triệu đồng/năm, tùy thuộc vào kết quả công việc được giao, không áp dụng mức trần tiền lương.</li><li>Chế độ chính sách: được tham gia đóng bảo hiểm xã hội, bảo hiểm y tế, chăm sóc sức khỏe và các chế độ đãi ngộ khác.</li><li>Mức lương cạnh tranh, thu nhập cao, trên cơ sở lương cứng tối thiểu giao KPI/KRI và lương kinh doanh trên cơ sở đơn giá doanh thu phát sinh mới, không áp dụng mức trần tiền lương. Được thưởng Quý / Năm theo kết quả hoàn thành của cá nhân và đơn vị.</li><li>Được làm việc trong môi trường chuyên nghiệp, năng động, chủ động trong công việc.</li><li>Được ưu tiên trọng dụng nhân tài theo quy chế quản trị tài năng của Tập đoàn VNPT và Tổng Công ty VNPT Vinaphone.</li></ul>',
       company_id: 1,
-      salary_min: 15000,
-      salary_max: 20000,
+      salary_min: 15000000,
+      salary_max: 20000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -39,8 +39,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm</li><li>Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn</li><li>Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng</li><li>Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế</li></ul>',
       company_id: 2,
-      salary_min: 25000,
-      salary_max: 40000,
+      salary_min: 25000000,
+      salary_max: 40000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Manhattan, New York, USA',
@@ -66,8 +66,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thời gian làm việc: Thứ 2-thứ 6: 8h30-17h, thứ 7: 8h30-12h</li><li>Mức lương: thỏa thuận, xứng đáng với năng lực</li><li>Chế độ nghỉ phép năm, nghỉ lễ, Tết theo quy định</li><li>Tham gia BHXH, BHTN, BHYT đầy đủ</li><li>Thưởng lễ 30/04, 01/05, 01/06, 02/09, tết dương lịch, âm lịch,...</li><li>Xét nâng lương định kỳ</li><li>Môi trường làm việc năng động, hòa đồng, thân thiện, sếp tận tâm, nhiệt tình</li><li>Được tham gia vào các khóa đào tạo, nâng cao năng lực của công ty</li></ul>',
       company_id: 3,
-      salary_min: 20000,
-      salary_max: 30000,
+      salary_min: 20000000,
+      salary_max: 30000000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -93,8 +93,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Làm việc trong một đội ngũ nhanh chóng, được hỗ trợ đầy đủ bởi BOM. Thay đổi có thể được thực hiện trong vài tuần</li><li>Có một lộ trình rõ ràng để phát triển</li><li>Làm việc trong một đội ngũ sẵn sàng đảm nhận rủi ro và thách thức "thực hành tốt nhất"</li><li>Mức lương có thể thương lượng theo năng lực (thưởng cuối năm,... )</li><li>Đầy đủ quyền lợi với bảo hiểm xã hội. Kiểm tra sức khỏe hàng năm và bảo hiểm PTI theo chính sách của công ty</li><li>Mối quan hệ nhân viên: chuyến công ty, xây dựng đội ngũ,...</li><li>Nghỉ phép có lương: 12 ngày/năm</li></ul>',
       company_id: 4,
-      salary_min: 13000,
-      salary_max: 18000,
+      salary_min: 13000000,
+      salary_max: 18000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Tay Son, Da Nang, Viet Nam',
@@ -120,8 +120,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Chế độ lương & thưởng hấp dẫn: Mức lương thỏa thuận theo năng lực, thưởng lễ Tết, lương tháng 13, thưởng dự án, thưởng hiệu quả cá nhân, hỗ trợ ăn sáng, phụ cấp ăn trưa, gửi xe, xăng xe, điện thoại, phụ cấp trang điểm, quà tặng lễ. Bảo hiểm & chăm sóc sức khỏe toàn diện: BHXH, BHYT, BHTN, gói bảo hiểm sức khỏe cao cấp, khám sức khỏe định kỳ. Môi trường làm việc hiện đại: Cung cấp máy tính, trang thiết bị hiện đại, văn phòng làm việc Hi-tech, không gian ăn nhẹ miễn phí (nước uống, snack).</li></ul>',
       company_id: 5,
-      salary_min: 10000,
-      salary_max: 15000,
+      salary_min: 10000000,
+      salary_max: 15000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -147,8 +147,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Chế độ lương & thưởng hấp dẫn: Mức lương thỏa thuận theo năng lực, thưởng lễ Tết, lương tháng 13, thưởng dự án, thưởng hiệu quả cá nhân, hỗ trợ ăn sáng, phụ cấp ăn trưa, gửi xe, xăng xe, điện thoại, phụ cấp trang điểm, quà tặng lễ. Bảo hiểm & chăm sóc sức khỏe toàn diện: BHXH, BHYT, BHTN, gói bảo hiểm sức khỏe cao cấp, khám sức khỏe định kỳ. Môi trường làm việc hiện đại: Cung cấp máy tính, trang thiết bị hiện đại, văn phòng làm việc Hi-tech, không gian ăn nhẹ miễn phí (nước uống, snack).</li></ul>',
       company_id: 6,
-      salary_min: 15000,
-      salary_max: 23000,
+      salary_min: 15000000,
+      salary_max: 23000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Shibuya, Tokyo, Japan',
@@ -174,8 +174,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm - Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn - Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng. - Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế. - Được thư giãn, khơi nguồn sáng tạo với Happy Time mỗi ngày. - Thưởng thức bữa trưa tại Tập đoàn, được chọn lọc bởi các chuyên gia dinh dưỡng. - Cơ hội tham gia gắn kết với tập thể, tổ chức với các hoạt động team building - Chế độ chăm sóc y tế đặc biệt cho CBNV và người thân với trang thiết bị hiện đại.</li></ul>        ',
       company_id: 7,
-      salary_min: 17000,
-      salary_max: 25000,
+      salary_min: 17000000,
+      salary_max: 25000000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Ninh Kieu, Can Tho, Viet Nam',
@@ -201,8 +201,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm - Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng. - Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế. - Được thư giãn, khơi nguồn sáng tạo với Happy Time mỗi ngày. - Thưởng thức bữa trưa tại Tập đoàn, được chọn lọc bởi các chuyên gia dinh dưỡng. - Cơ hội tham gia gắn kết với tập thể, tổ chức với các hoạt động team building - Chế độ chăm sóc y tế đặc biệt cho CBNV và người thân với trang thiết bị hiện đại.</li></ul>        ',
       company_id: 8,
-      salary_min: 10000,
-      salary_max: 15000,
+      salary_min: 10000000,
+      salary_max: 15000000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -228,8 +228,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập: Lương 12.000.000 - 16.000.000 + Phụ cấp + Thưởng (Up to 13.000.000 - 18.000.000Đ). Phụ cấp sức khỏe/làm đẹp 500.000Đ, xăng xe 200.000Đ, ăn trưa và xế free. Cơ hội phát triển: Nội dung đa kênh, học hỏi, thử sai, dự án Marketing. Môi trường làm việc năng động, thân thiện. Đánh giá, tăng lương định kỳ, thưởng lễ tết, du lịch. Thời gian làm việc: 8h30 - 18h00, thứ 2 - thứ 7.</li></ul>        ',
       company_id: 9,
-      salary_min: 15000,
-      salary_max: 23000,
+      salary_min: 15000000,
+      salary_max: 23000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Cau Giay, Ha Noi, Viet Nam',
@@ -255,8 +255,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập 12-18 triệu + phụ cấp + thưởng, cơ hội đa kênh, phát triển sự nghiệp, môi trường năng động, thưởng lễ tết, thời gian linh hoạt 8h30-18h00, T2-T7.</li></ul>        ',
       company_id: 3,
-      salary_min: 25000,
-      salary_max: 30000,
+      salary_min: 25000000,
+      salary_max: 30000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 1,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -282,8 +282,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Kinh nghiệm ưu tiên 2 năm làm việc với TikTok.</li><li>Sáng tạo nội dung, kỹ năng chỉnh sửa video chuyên nghiệp.</li><li>Am hiểu văn hóa và xu hướng thị trường Hoa Kỳ.</li><li>Đam mê khám phá nội dung mới và hiểu biết về TikTok.</li><li>Kỹ năng làm việc nhóm và giao tiếp tốt.</li><li>Năng lực giao tiếp tiếng Anh tốt.</li></ul>        ',
       company_id: 4,
-      salary_min: 17000,
-      salary_max: 25000,
+      salary_min: 17000000,
+      salary_max: 25000000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 1,
       job_location: 'Prenzlauer Berg, Berlin, Germany',
@@ -309,8 +309,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li><strong>LƯƠNG, THƯỞNG:</strong> 12-15 triệu/tháng.<ul><li>Bao gồm: Lương cơ bản + Phụ cấp (Ăn trưa + Xăng xe) + Thưởng.</li><li>Thưởng năm và thưởng các ngày lễ tết theo quy định của nhà nước.</li><li>Thời gian làm việc: 8h30 - 17h30 từ thứ 2 đến thứ 6 + thứ 7 luân phiên.</li></ul></li><li><strong>CHẾ ĐỘ PHÚC LỢI:</strong><ul><li>Đóng BHXH ngay sau khi hết thử việc.</li><li>Cam kết trả lương đúng hạn trong mọi hoàn cảnh.</li><li>Môi trường làm việc chuyên nghiệp, năng động và sáng tạo.</li><li>Được trang bị máy tính, cơ sở vật chất đầy đủ, tiện nghi.</li><li>Du lịch/Teambuilding hàng năm để nâng cao tinh thần đội nhóm trong tổ chức.</li><li>Dã ngoại, xem phim, sinh hoạt ngoại khóa hàng tháng, quý.</li></ul></li><li><strong>PHÁT TRIỂN NĂNG LỰC VÀ LỘ TRÌNH CÔNG DANH:</strong><ul><li>Được đào tạo & học hỏi từ những chuyên gia hàng đầu trong ngành sản xuất phim hoạt hình (Đạo diễn – Họa sĩ Trịnh Lâm Tùng, họa sĩ Vũ Duy Khánh...).</li><li>Cam kết phát triển năng lực CBNV thông qua các hoạt động đào tạo về chuyên môn và kỹ năng mềm hàng tuần, hàng tháng.</li><li>Con đường công danh của bạn luôn rõ ràng tại ALPHA STUDIO: Nhân viên - Chuyên viên - Chuyên viên cao cấp - Chuyên gia Nhân viên - Chuyên viên - Trưởng nhóm - Trưởng bộ phận - Giám đốc chuyên môn.</li></ul></li></ul>        ',
       company_id: 2,
-      salary_min: 20000,
-      salary_max: 30000,
+      salary_min: 20000000,
+      salary_max: 30000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Hai Chau, Da Nang, Viet Nam',
@@ -336,8 +336,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập tối thiểu từ 200 triệu VNĐ/năm.</li><li>Phụ cấp ăn trưa: 680.000 VNĐ/tháng. Điện thoại: 200.000 VNĐ/tháng.</li><li>Chế độ thưởng theo quý, năm; tiền quà các ngày Lễ, Tết, ngày thành lập Tập đoàn; hỗ trợ chi phí nghỉ dưỡng hằng năm...</li><li>Hưởng Bảo hiểm Xã hội, Bảo hiểm Y tế theo quy định của Luật Lao động và của Tập đoàn.</li><li>Bảo hiểm sức khỏe PJICO (Chi trả 100% theo thực tế phát sinh chi phí thuộc phạm vi bảo hiểm, Không vượt quá hạn mức bảo hiểm).</li><li>Môi trường chuyên nghiệp, sáng tạo, cạnh tranh, phát triển, năng động có nhiều cơ hội thăng tiến.</li><li>Cơ hội học tập, nghiên cứu, làm việc trong nước và các nước trên thế giới.</li></ul>        ',
       company_id: 10,
-      salary_min: 25000,
-      salary_max: 40000,
+      salary_min: 25000000,
+      salary_max: 40000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -363,8 +363,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập tối thiểu từ 200 triệu VNĐ/năm.</li><li>Phụ cấp ăn trưa: 680.000 VNĐ/tháng. Điện thoại: 200.000 VNĐ/tháng.</li><li>Chế độ thưởng theo quý, năm; tiền quà các ngày Lễ, Tết, ngày thành lập Tập đoàn; hỗ trợ chi phí nghỉ dưỡng hằng năm...</li><li>Hưởng Bảo hiểm Xã hội, Bảo hiểm Y tế theo quy định của Luật Lao động và của Tập đoàn.</li><li>Bảo hiểm sức khỏe PJICO (Chi trả 100% theo thực tế phát sinh chi phí thuộc phạm vi bảo hiểm, Không vượt quá hạn mức bảo hiểm).</li><li>Môi trường chuyên nghiệp, sáng tạo, cạnh tranh, phát triển, năng động có nhiều cơ hội thăng tiến.</li><li>Cơ hội học tập, nghiên cứu, làm việc trong nước và các nước trên thế giới.</li></ul>        ',
       company_id: 6,
-      salary_min: 55000,
-      salary_max: 70000,
+      salary_min: 55000000,
+      salary_max: 70000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 5,
       job_location: 'Le Marais, Paris, France',
@@ -390,8 +390,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Ứng viên thành công sẽ tham gia đội ngũ tài năng thân thiện, đầy động lực và cam kết, với ưu đãi hấp dẫn từ $800 đến $1500, bảo hiểm y tế "FPT care" do AON cung cấp, xe đưa đón, kỳ nghỉ hè hàng năm, các khoản phụ cấp khác và tiện ích tại khuôn viên FTown.</li></ul>        ',
       company_id: 8,
-      salary_min: 45000,
-      salary_max: 60000,
+      salary_min: 45000000,
+      salary_max: 60000000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 4,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -417,8 +417,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Mức lương cạnh tranh</li><li>Môi trường làm việc thân thiện, năng động, có cơ hội phát triển và thăng tiến.</li><li>Ghi nhận thành tích, tăng lương và thưởng kịp thời.</li><li>Thưởng định kì ngày lễ 30/4, 2/9, thường Tết.</li><li>Nghỉ thứ 7, chủ nhật và các ngày Lễ theo quy định.</li><li>Được hỗ trợ tiền làm thêm giờ, phụ cấp hoạt động dự án.</li><li>Tham gia các khóa đào tạo do công ty tổ chức: kỹ năng mềm, nâng cao trình độ chuyên môn...</li><li>Có cơ hội thăng tiến.</li><li>Được đào tạo, làm việc cùng các chuyên gia nước ngoài.</li><li>Có cơ hội công tác nước ngoài.</li><li>Được hưởng đầy đủ các chế độ bảo hiểm theo luật Việt Nam và quy định của công ty.</li></ul>        ',
       company_id: 3,
-      salary_min: 35000,
-      salary_max: 40000,
+      salary_min: 35000000,
+      salary_max: 40000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -444,8 +444,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập: Theo năng lực, trung bình 10-15 triệu/tháng. Thời gian thử việc ngắn, có đào tạo và phúc lợi đầy đủ. Môi trường làm việc thân thiện và cơ hội phát triển.</li></ul>        ',
       company_id: 8,
-      salary_min: 45000,
-      salary_max: 60000,
+      salary_min: 45000000,
+      salary_max: 60000000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 4,
       job_location: 'Tay Son, Da Nang, Viet Nam',
@@ -457,7 +457,6 @@ const seedJobs = async (prisma) => {
     },
     update: {},
   });
-
 
   await prisma.job.upsert({
     where: {
@@ -472,8 +471,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập: từ 300 đến 650 triệu/năm (min/max), Phụ cấp ăn ca 730,000 VNĐ/tháng, Thưởng lễ, BHXH, BHYT, BHTN, Đào tạo, Thời gian làm việc: Thứ 2 - Thứ 6, 8-17h, Tăng lương định kỳ, Thăng tiến, Môi trường chuyên nghiệp, rộng, cơ hội thể hiện năng lực</li></ul>        ',
       company_id: 5,
-      salary_min: 50000,
-      salary_max: 70000,
+      salary_min: 50000000,
+      salary_max: 70000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
       job_location: 'Tay Son, Da Nang, Viet Nam',
@@ -499,8 +498,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Bảo hiểm theo quy định</li><li>Ăn trưa, nghỉ trưa tại trường</li><li>Thưởng hàng tháng theo năng lực</li><li>Giảm 100% học phí cho 2 con theo học tại trường</li><li>Có cơ hội được làm việc trong môi trường chuyên nghiệp</li></ul>        ',
       company_id: 1,
-      salary_min: 15000,
-      salary_max: 20000,
+      salary_min: 15000000,
+      salary_max: 20000000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 7,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -526,8 +525,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Full-time: 12,000,000 - 16,000,000 VND/tháng (làm việc theo giờ hành chính, từ 8h30 đến 18h, nghỉ trưa 12h30 đến 14h) và thưởng.</li><li>Bảo hiểm, trợ cấp đi lại và ăn trưa, thưởng tháng lương thứ 13, 12 ngày nghỉ phép trong năm, tiệc công ty hàng quý, du lịch công ty.</li><li>Thưởng cuối dự án 2 triệu - 4 triệu</li><li>Có hỗ trợ đóng dấu thực tập</li></ul>        ',
       company_id: 5,
-      salary_min: 12000,
-      salary_max: 16000,
+      salary_min: 12000000,
+      salary_max: 16000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
       job_location: 'Thanh Khe, Da Nang, Viet Nam',
@@ -553,8 +552,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập hấp dẫn lên tới 35 triệu đồng/tháng.</li><li>Môi trường làm việc sáng tạo và thân thiện.</li><li>Được hưởng đầy đủ các quyền lợi về BHXH - BHYT.</li><li>Được trang bị đầy đủ trang thiết bị phục vụ công việc.</li><li>Cơ hội thể hiện tài năng và đóng góp ý tưởng trong các dự án thú vị.</li><li>Phát triển sự nghiệp và thăng tiến trong lĩnh vực Lập trình.</li></ul>        ',
       company_id: 3,
-      salary_min: 20000,
-      salary_max: 35000,
+      salary_min: 20000000,
+      salary_max: 35000000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Cau Giay, Ha Noi, Viet Nam',
@@ -578,10 +577,10 @@ const seedJobs = async (prisma) => {
       requirements:
         '<ul><li>Có từ 2 năm kinh nghiệm triển khai các sản phẩm CNTT/ATTT</li><li>Tốt nghiệp ĐH/CĐ, chuyên ngành: CNTT, Điện tử viễn thông, An toàn thông tin</li><li>Có kiến thức, kinh nghiệm về các hệ điều hành linux là bắt buộc (Ubuntu, Debian, Centos...), có kiến thức cơ bản về hệ thống mạng, TCP/IP Routing, Switching...</li><li>Có kiến thức về các hệ thống ảo hóa: vmware esxi, vcenter hoặc tương đương</li><li>Có kinh nghiệm và kỹ năng làm việc khách hàng</li><li>Có chứng chỉ mạng, Linux, bảo mật là lợi thế</li><li>Có khả năng đọc hiểu tiếng Anh tốt, trình độ tương đương TOEIC 550 trở lên</li></ul>        ',
       advantages:
-      '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm</li><li>Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn</li><li>Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng</li><li>Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế</li></ul>',
+        '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm</li><li>Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn</li><li>Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng</li><li>Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế</li></ul>',
       company_id: 5,
-      salary_min: 18000,
-      salary_max: 32000,
+      salary_min: 18000000,
+      salary_max: 32000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -607,8 +606,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Môi trường làm việc thân thiện, trẻ, hòa đồng, vui vẻ, tôn trọng cá nhân, đề cao học hỏi.</li><li>Hỗ trợ ăn trưa.</li><li>Được tham gia chế độ bảo hiểm y tế, bảo hiểm thất nghiệp và bảo hiểm xã hội sau khi ký hợp đồng chính thức.</li><li>Chế độ lương thưởng rõ ràng theo năng lực, trách nhiệm và có cơ hội thăng tiến cao.</li><li>Được tham gia các hoạt động bonding team hằng tháng, company trip hằng năm.</li><li>Thời gian làm việc linh hoạt.</li><li>Lương: thoả thuận, chưa bao gồm tip, service charge, commission bonus.</li></ul>        ',
       company_id: 1,
-      salary_min: 10000,
-      salary_max: 20000,
+      salary_min: 10000000,
+      salary_max: 20000000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 0,
       job_location: 'Shibuya, Tokyo, Japan',
@@ -632,10 +631,10 @@ const seedJobs = async (prisma) => {
       requirements:
         '<ul><li>Không yêu cầu kinh nghiệm</li><li>Tiếng Anh cơ bản đến khá</li><li>Nhanh nhẹn và chăm chỉ</li><li>Biết xem tiktok và chỉnh sửa Capcut là một lợi thế</li></ul>        ',
       advantages:
-      '<ul><li>Thời gian làm việc: Thứ 2-thứ 6: 8h30-17h, thứ 7: 8h30-12h</li><li>Mức lương: thỏa thuận, xứng đáng với năng lực</li><li>Chế độ nghỉ phép năm, nghỉ lễ, Tết theo quy định</li><li>Tham gia BHXH, BHTN, BHYT đầy đủ</li><li>Thưởng lễ 30/04, 01/05, 01/06, 02/09, tết dương lịch, âm lịch,...</li><li>Xét nâng lương định kỳ</li><li>Môi trường làm việc năng động, hòa đồng, thân thiện, sếp tận tâm, nhiệt tình</li><li>Được tham gia vào các khóa đào tạo, nâng cao năng lực của công ty</li></ul>',
+        '<ul><li>Thời gian làm việc: Thứ 2-thứ 6: 8h30-17h, thứ 7: 8h30-12h</li><li>Mức lương: thỏa thuận, xứng đáng với năng lực</li><li>Chế độ nghỉ phép năm, nghỉ lễ, Tết theo quy định</li><li>Tham gia BHXH, BHTN, BHYT đầy đủ</li><li>Thưởng lễ 30/04, 01/05, 01/06, 02/09, tết dương lịch, âm lịch,...</li><li>Xét nâng lương định kỳ</li><li>Môi trường làm việc năng động, hòa đồng, thân thiện, sếp tận tâm, nhiệt tình</li><li>Được tham gia vào các khóa đào tạo, nâng cao năng lực của công ty</li></ul>',
       company_id: 1,
-      salary_min: 3000,
-      salary_max: 5000,
+      salary_min: 30000000,
+      salary_max: 50000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 0,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -661,8 +660,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu Nhập: Từ 10 triệu đến trên 30 triệu (Bao gồm: Lương cứng + Lương KPI + % Hoa hồng) hoặc đàm phán trao đổi theo năng lực và kế hoạch mục tiêu.</li><li>Phúc Lợi: <ul><li>Làm việc trong môi trường chuyên nghiệp - SẢN PHẨM TOP ĐẦU ƯA CHUỘNG VÀ PHÁT TRIỂN, môi trường trẻ năng động, thu nhập cao, có thể phát triển lên cấp Quản Lí và Phát triển chuyên môn kiến thức.</li><li>Thưởng các ngày Lễ/Tết, Lương tháng 13, Thưởng doanh thu cuối năm.</li><li>Các danh hiệu thi đua và vinh danh cá nhân cống hiến.</li><li>Tham quan, du lịch, nghỉ mát hàng năm.</li><li>Sử dụng các sản phẩm và dịch vụ VIP mà công ty hợp tác.</li><li>Được đào tạo Kinh doanh từ chuyên gia hàng đầu.</li><li>Thực hiện theo quyền lợi trong Hợp Đồng Lao Động, BHXH.</li></ul></li></ul>        ',
       company_id: 7,
-      salary_min: 10000,
-      salary_max: 30000,
+      salary_min: 10000000,
+      salary_max: 30000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Cau Giay, Ha Noi, Viet Nam',
@@ -686,10 +685,10 @@ const seedJobs = async (prisma) => {
       requirements:
         '<ul><li>Có ít nhất 2 năm kinh nghiệm trong lĩnh vực cơ khí, chế tạo máy.</li><li>Ưu tiên ứng viên đã làm việc cho các công ty gia công chế tạo khuôn mẫu.</li><li>Sử dụng thành thạo phần mềm thiết kế Autocad, 3D và các phần mềm ứng dụng trên máy tính.</li><li>Thành thạo các phương pháp nhận biết, phân loại và lựa chọn vật liệu cơ khí.</li><li>Thành thạo các thao tác lắp ráp, lắp đặt thiết bị, máy móc.</li><li>Thành thạo trong khâu bảo trì, bảo dưỡng các sản phẩm cơ khí.</li><li>Có kỹ năng gia công như: bào, hàn, phay, tiện...</li><li>Nhanh nhẹn, năng nổ, chịu khó học hỏi, chịu được áp lực cao trong công việc.</li></ul>        ',
       advantages:
-      '<ul><li>Thu nhập: Theo năng lực, trung bình 10-15 triệu/tháng. Thời gian thử việc ngắn, có đào tạo và phúc lợi đầy đủ. Môi trường làm việc thân thiện và cơ hội phát triển.</li></ul>        ',
+        '<ul><li>Thu nhập: Theo năng lực, trung bình 10-15 triệu/tháng. Thời gian thử việc ngắn, có đào tạo và phúc lợi đầy đủ. Môi trường làm việc thân thiện và cơ hội phát triển.</li></ul>        ',
       company_id: 2,
-      salary_min: 12000,
-      salary_max: 20000,
+      salary_min: 12000000,
+      salary_max: 60000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Thanh Khe, Da Nang, Viet Nam',
@@ -715,8 +714,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập: 7.000.000 – 15.000.000 (Lương cứng + Khoản thưởng Tuần/Tháng/KPI) + Trợ cấp ăn trưa + Phúc lợi (Sinh nhật, hiếu, hỉ, sinh con...) + Ngày nghỉ và ngày phép đầy đủ theo quy định + Môi trường làm việc trẻ trung, năng động và chuyên nghiệp, cơ hội học tập và phát triển chuyên môn.</li></ul>        ',
       company_id: 10,
-      salary_min: 7000,
-      salary_max: 15000,
+      salary_min: 7000000,
+      salary_max: 15000000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Cau Giay, Ha Noi, Viet Nam',
@@ -742,8 +741,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Mức lương hấp dẫn, phù hợp với năng lực làm việc (10-20tr).</li><li>Review thành tích 2 lần/năm</li><li>Giờ làm việc: 8:30 - 17:30, thứ 2-thứ 6. Nghỉ t7 và CN</li><li>Được hưởng chế độ đãi ngộ tốt của công ty khi trở thành nhân viên: gửi xe, máy tính hiện đại, BHXH, bảo hiểm, du lịch công ty hàng năm,...</li><li>Lương tháng 13, Thưởng cuối năm,...</li><li>Công nhận và phần thưởng dựa trên hiệu suất của bạn</li><li>Cơ hội thăng tiến cao</li></ul>        ',
       company_id: 8,
-      salary_min: 15000,
-      salary_max: 20000,
+      salary_min: 15000000,
+      salary_max: 20000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Manhattan, New York, USA',
@@ -769,8 +768,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>1. Lương, thưởng, bảo hiểm:</li><li>- 100% lương trong thời gian On Job Training</li><li>- Đóng bảo hiểm trên 100% lương</li><li>- Performance bonus/KPI bonus hàng quý và cuối năm</li><li>- Bảo hiểm sức khỏe PTI (ngoại trú 15 triệu/năm, nội trú 100 triệu/năm)</li><li>- Health check 1 năm/lần tại các bệnh viện lớn</li><li>2. Training & development:</li><li>- Native English instructor (từng giảng dạy tại British University Vietnam, ĐH Hà Nội, ĐH Quốc Gia HN, Language Link Vietnam...)</li><li>- Tham gia nhiều khóa đào tạo kĩ năng mềm: Cultivate Your Leadership Program, Unleash Your Potential Program...</li></ul>        ',
       company_id: 6,
-      salary_min: 25000,
-      salary_max: 30000,
+      salary_min: 25000000,
+      salary_max: 30000000,
       expired_at: '2024-02-28T23:59:59Z',
       years_of_experience: 2,
       job_location: 'Hoan Kiem, Ha Noi, Viet Nam',
@@ -796,8 +795,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Kinh nghiệm thiết kế giao diện và trải nghiệm người dùng.</li><li>Thành thạo Figma, có kinh nghiệm sử dụng Sketch, Adobe XD, hoặc Illustrator.</li><li>Hiểu biết về nguyên tắc thiết kế tương tác và đáp ứng.</li><li>Kiến thức về Material Design là một lợi thế.</li><li>Làm việc hiệu quả trong môi trường đa chức năng và nhóm.</li><li>Kiến thức về quy trình Agile, Scrum là một lợi thế.</li><li>Kỹ năng giao tiếp và làm việc nhóm tốt.</li><li>Khả năng đóng góp và xây dựng sản phẩm.</li></ul>        ',
       company_id: 1,
-      salary_min: 15000,
-      salary_max: 25000,
+      salary_min: 15000000,
+      salary_max: 25000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'Cau Giay, Ha Noi, Viet Nam',
@@ -823,8 +822,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Thu nhập: lương khởi điểm 50-65k/ca 45, tương đương trung bình 66-87k/h bao gồm lương cứng và thưởng tuỳ vị trí (tổng thu nhập dao động từ 3tr - 11tr/tháng)</li><li>Mức lương cao hơn 20% - 50% so với công ty cùng ngành</li><li>Đánh giá tăng lương định kỳ, mức tối đa nhận được 115k/ca 45</li><li>Đăng ký theo lịch rảnh cá nhân</li><li>Hợp tác với học sinh để tạo ra các lớp học với trải nghiệm, đào tạo E-learning chuẩn thế kỷ 21 "Đem thế giới vào lớp học và kết nối lớp học với cuộc sống"</li><li>Được làm việc trong môi trường chuyên nghiệp và đội ngũ quản lý có kinh nghiệm và trình độ cao trong lĩnh vực giáo dục.</li><li>Educa luôn tạo cơ hội cho những người ham học hỏi và muốn phát triển bản thân, đồng thời đánh giá công bằng theo năng lực của ứng viên.</li><li>Sau 6 tháng làm việc, nhân viên sẽ nhận được chứng nhận giảng dạy tại trung tâm, có hỗ trợ đóng dấu thực tập nếu cần.</li></ul>        ',
       company_id: 9,
-      salary_min: 15000,
-      salary_max: 20000,
+      salary_min: 15000000,
+      salary_max: 20000000,
       expired_at: '2024-01-20T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
@@ -850,8 +849,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Mức lương: Thu nhập: 10M - 15M. Mức lương thỏa thuận theo năng lực ứng viên. Được đào tạo hội nhập và đào tạo chuyên sâu để nâng cao nghiệp vụ. Phụ cấp và quyền lợi: Phụ cấp ăn ca và chi phí hoạt động tại trung tâm: 300.000 VNĐ/ tháng. Phụ cấp chứng chỉ tiếng Anh còn hạn (lên đến 2,000,000 VNĐ/tháng). Chế độ quỹ khuyến học hàng tháng dành cho nhân viên có con nhỏ dưới 16 tuổi: 500.000 VNĐ/ tháng. Học tiếng Anh miễn phí tại trung tâm. Thưởng theo các ngày sinh nhật, lễ tết</li></ul>        ',
       company_id: 3,
-      salary_min: 25000,
-      salary_max: 30000,
+      salary_min: 25000000,
+      salary_max: 30000000,
       expired_at: '2024-03-31T23:59:59Z',
       years_of_experience: 3,
       job_location: 'HaNoi, VN',
@@ -877,8 +876,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Phụ cấp: hưởng theo chính sách thực tập sinh hiện tại của công ty</li><li>Được đào tạo chuyên sâu về Cloud Computing bởi những chuyên gia hàng đầu trong ngành</li><li>Được hưởng các chế độ phúc lợi, đãi ngộ hấp dẫn, chế độ BHXH – BHYT và chế độ khác theo quy định Pháp luật và Công ty khi trở thành nhân viên chính thức</li><li>Môi trường làm việc năng động, sáng tạo, chuyên nghiệp, thân thiện</li><li>Được tham gia các khóa đào tạo nội bộ và bên ngoài để nâng cao nghiệp vụ</li><li>Nghỉ thứ 7, Chủ nhật + Nghỉ phép theo Quy định của Pháp luật hiện hành</li><li>Khi trở thành nhân viên chính thức Lương T13, Thưởng lễ Tết theo quy định của Công ty. Xét tăng lương 1 năm 1 lần</li></ul>        ',
       company_id: 4,
-      salary_min: 23000,
-      salary_max: 27000,
+      salary_min: 23000000,
+      salary_max: 27000000,
       expired_at: '2024-01-31T23:59:59Z',
       years_of_experience: 4,
       job_location: 'HaNoi, VN',
@@ -902,10 +901,10 @@ const seedJobs = async (prisma) => {
       requirements:
         '<ul><li>Có từ 2 năm kinh nghiệm triển khai các sản phẩm CNTT/ATTT</li><li>Tốt nghiệp ĐH/CĐ, chuyên ngành: CNTT, Điện tử viễn thông, An toàn thông tin</li><li>Có kiến thức, kinh nghiệm về các hệ điều hành linux là bắt buộc (Ubuntu, Debian, Centos...), có kiến thức cơ bản về hệ thống mạng, TCP/IP Routing, Switching...</li><li>Có kiến thức về các hệ thống ảo hóa: vmware esxi, vcenter hoặc tương đương</li><li>Có kinh nghiệm và kỹ năng làm việc khách hàng</li><li>Có chứng chỉ mạng, Linux, bảo mật là lợi thế</li><li>Có khả năng đọc hiểu tiếng Anh tốt, trình độ tương đương TOEIC 550 trở lên</li></ul>        ',
       advantages:
-      '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm</li><li>Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn</li><li>Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng</li><li>Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế</li></ul>',
+        '<ul><li>Chế độ Thu nhập hấp dẫn và tăng theo năng lực, kinh nghiệm</li><li>Vị trí cấp tập đoàn, quản trị toàn bộ ngành dọc, level Chuyên viên chính chỉ chiếm 15% định biên trong tập đoàn</li><li>Môi trường làm việc cởi mở và năng động, khuyến khích trao đổi ý tưởng ở mọi cấp, cho phép bạn làm việc, sáng tạo theo cách riêng</li><li>Được khơi gợi cảm hứng làm việc với văn phòng xanh, không gian mở, hiện đại tiêu chuẩn quốc tế</li></ul>',
       company_id: 2,
-      salary_min: 17000,
-      salary_max: 25000,
+      salary_min: 17000000,
+      salary_max: 25000000,
       expired_at: '2024-01-15T23:59:59Z',
       years_of_experience: 2,
       job_location: 'HaNoi, VN',
@@ -931,8 +930,8 @@ const seedJobs = async (prisma) => {
       advantages:
         '<ul><li>Môi trường chuyên nghiệp, trẻ trung, hiện đại, nhiều cơ hội phát triển nghề nghiệp.</li><li>Phát triển sản phẩm mũi nhọn, triển khai cho tổ chức chính phủ và doanh nghiệp lớn.</li><li>Thách thức cao, làm việc với đội ngũ chuyên gia ATTT.</li><li>Thời gian linh hoạt, package thu nhập hấp dẫn, thưởng hàng tháng, quý, năm.</li><li>Hỗ trợ thi chứng chỉ, 12 ngày phép, bảo hiểm sức khỏe, gói quà phúc lợi.</li><li>Happy time từ 4h - 4h30 hàng ngày.</li></ul>        ',
       company_id: 2,
-      salary_min: 15000,
-      salary_max: 200000,
+      salary_min: 15000000,
+      salary_max: 20000000,
       expired_at: '2024-01-30T23:59:59Z',
       years_of_experience: 6,
       job_location: 'HaNoi, VN',
@@ -944,6 +943,5 @@ const seedJobs = async (prisma) => {
     },
     update: {},
   });
-
 };
 export default seedJobs;

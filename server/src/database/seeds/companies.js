@@ -26,7 +26,7 @@ const seedCompanies = async (prisma) => {
   await prisma.company.create({
     data: {
       name: 'Slack',
-      email: 'career@slack.com',
+      email: 'itss2.hedspi@gmail.com',
       website: 'https://slack.com',
       phone_number: '(406) 666-1234',
       hust_partner: true,
@@ -51,7 +51,7 @@ const seedCompanies = async (prisma) => {
   await prisma.company.create({
     data: {
       name: 'Viettel',
-      email: 'career@viettel.com',
+      email: 'itss2.hedspi@gmail.com',
       website: 'https://viettel.com.vn',
       phone_number: '(84) 1800 8098',
       hust_partner: true,
